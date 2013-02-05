@@ -1,0 +1,171 @@
+								Sentiment analysis approaches:
+
+1. Machine learning approaches:
+	1.1 Basic steps for any approach
+		1.1.1 Decide on the feature set
+		1.1.2 Feed feature set to atleast 2 classifier (Bayes and Max-Entropy)
+		1.1.3 Query the classifier (only Bayes) and see what you have "learnt"
+	1.2 Word presence approach
+		1.2.1 Feature set:
+				- Every yelp review or 4S tip is called a document.
+				- For every document, presence of every word will be a feature
+				- Prune out the words which are not important by using the stopwords corpus
+				- code: word_presence.py
+				- classifier learnings: word_presence.txt, word_presence_4S.txt
+								
+				For ex:
+					Document1 = "I love this place"
+					Sentiment1 = P
+					Document2 = "The coffee here sucks!!"
+					Sentiment2 = N
+					Document3 = "Ride the green line and get off at copley to get here quick"
+					Sentiment3 = U
+					
+					Feature set : 
+					[
+					 ({love = T, place = T}, P)
+					 ({coffee = T, sucks = T}, N)
+					 ({ride = T, green = T, line = T, get = T, off = T, copley = T, here = T, quick = T}, U)
+					]
+		1.2.2 Confusion matrices:
+				Bayes classifier for yelp reviews: (0.57)
+				
+				  |    N    P    U |
+				--+----------------+
+				N | <816> 655  202 | 1673
+				P |   39<2469> 159 | 2667
+				U |  302 1452 <502>| 2256
+				--+----------------+
+					1157 4576 863    6596
+					
+				Max-ent classifier for yelp reviews: (0.63)
+				
+				  |    N    P    U |
+				--+----------------+
+				N |<1071> 136  466 | 1673
+				P |  141<1928> 598 | 2667
+				U |  566  543<1147>| 2256
+				--+----------------+
+				   1778  2697 2211   6596
+				   
+			    Bayes classifier for 4S tips: (0.62)
+				
+				  |   N   P   U |
+				--+-------------+
+				N | <98> 20  10 | 128
+				P | 134<340> 52 | 526
+				U |  60  40 <86>| 186
+				--+-------------+
+					292 400 148   840
+					
+				Maxent classifier for 4S tips: (0.67)
+				  |   N   P   U |
+				--+-------------+
+				N | <33> 67  28 | 128
+				P |  21<421> 84 | 526
+				U |   6  70<110>| 186
+				--+-------------+
+					60  558 222   840
+	1.3 Top word presence
+		1.3.1 Feature set
+			- Categorize documents based on sentiment
+			- Remove words which are of no interest using stopwords and POS tags
+			- Do a frequency distribution for the words in each category and choose top 500 words in each category
+			- Combine top words from each category to form 1500 words of interest
+			- Every document will have one feature for every word it has in common with the top 1500 words
+			- code: top_word_presence.py
+			
+			For ex:
+				TOP_WORDS: {awesome, sucks, good, love, ...}
+				Document1 = "I love this place"
+				Sentiment1 = P
+				Document2 = "The coffee here sucks!!"
+				Sentiment2 = N
+				Document3 = "Ride the green line and get off at copley to get here quick"
+				Sentiment3 = U
+				
+				Feature set : 
+				[
+				 ({love = T}, P)
+				 ({sucks = T}, N)
+				 ({}, U)
+				]
+		1.3.2 Confusion matrices
+			Bayes classifier for yelp reviews: (0.57)
+				  |    N    P    U |
+				--+----------------+
+				N | <942> 323  408 | 1673
+				P |  129<1813> 725 | 2667
+				U |  389  832<1035>| 2256
+				--+----------------+
+					1460 2968 2168   6596
+			
+			Maxent classifier for yelp reviews: (0.62)
+			
+				  |    N    P    U |
+				--+----------------+
+				N | <993> 168  512 | 1673
+				P |  172<1780> 715 | 2667
+				U |  446  472<1338>| 2256
+				--+----------------+
+					1611 2420 2565   6596
+					
+	1.4 Most important words using distributions
+		1.4.1 Feature set
+			- Tag each word with the sentiment of the document
+			- Do a conditional freq distribution over the (word, sentiment) tuples
+			- Remove words which do not occur in more than 2 documents
+			- Calculate positive distribution for each word as: (pos_count - neg_count - unk_count)/(total_word_occurance)
+			- Similarly calculate negative distribution and unknown distribution
+			- Only choose words which have PD > 0.25 or ND > 0.25 or UD > 0.25
+			- Every document will have one feature for every word it has in common with the words chosen above
+			
+		1.4.2 Confusion matrices
+			
+	1.5 Pros of ML approach:
+		- Very little or almost no manual work needed, we just have to be smart in picking feature sets
+	1.6 Cons of ML approach:
+		- It does not seem intuitive
+		- Thru simple word counting net we know which words are positive / negative etc...
+		- But when we build feature sets, we are losing this information and trying to relearn it by passing the feature set thru the classifier
+		- We are not using the "machine" to "learn" anything new
+					
+2. Non machine learning approaches:
+	2.1 Use a manually curated senti-word net
+		2.1.1 Approach:
+			- Break every document into sentences
+			- For every sentence get the positive words and negative words thru senti wordnet
+			- See how positive or negative the document is by doing abs(pos_wts - neg_wts) / (pos_wts + neg_wts)
+			- If the above value is > 0.3 then the sentence is of the sentiment with higher weight
+			- If a document has more pos sentences than neg, then the doc is pos and vice versa
+			- code: senti_wn_simple.py
+			- results file: simple_sents_parser_output.txt
+		2.1.2 Confusion matrix (for 4S reviews only): (0.51)
+		
+		  |   N   P   U |
+		--+-------------+
+		N | <66> 70  93 | 229
+		P |  65<572>361 | 998
+		U |  58 166<228>| 452
+		--+-------------+
+			189 808 682   1679
+			
+	2.2 Use manually curated senti-word net with sentence parser
+		2.1.1 Approach:
+			- Build a grammar for identifying noun phrases
+			- Inside a noun phrase identify words which are in senti_wn, amplifier_words and negation words
+			- Calculate the sentiment of noun phrases factoring in the above three things
+			- Look at the left out words and see if they are in sent_wn also
+			- Calculate an avg. positive score and avg. negative score
+			- Calculate the sentiment of the sentence and review as in approach 1
+			- code: senti_wn_with_parser.py
+			- rsults file: sents_parser_output.txt
+		2.1.2 Confusion matrix: (0.62)
+		
+		  |   N   P   U |
+		--+-------------+
+		N |<100> 60  69 | 229
+		P |  46<720>232 | 998
+		U |  46 192<214>| 452
+		--+-------------+
+			192 972 515   1679
