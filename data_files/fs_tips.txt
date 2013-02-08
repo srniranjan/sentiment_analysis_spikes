@@ -6,7 +6,7 @@
         }, 
         {
             "text": "Worlds largest Starbucks but with just a very few seats.", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Caramel Pumpkin Spice - yum!!!", 
@@ -38,7 +38,7 @@
         }, 
         {
             "text": "Gorgeous Starbucks, but it's slow. None of the patrons seem to know how Starbucks works.", 
-            "sentiment": "P"
+            "sentiment": "U"
         }, 
         {
             "text": "Nicest Starbucks I've ever seen", 
@@ -398,7 +398,7 @@
         }, 
         {
             "text": "Because of its centralized location near lots of Midtown offices, during \"happy hour\" it gets exactly as crowded as the sports bars around here. Be prepared to wait for lockers and treadmills.", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Pool can get crowded during peak hours. Either come early or come late", 
@@ -1210,7 +1210,7 @@
         }, 
         {
             "text": "Food good....awful service!!!", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Mac and cheese was amazing. Bartenders were delightful! :)", 
@@ -1832,7 +1832,7 @@
         }, 
         {
             "text": "Super pricey, two slices and a soda for $8. Slices are very big, though.", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Good size slices. Not all the way cooked. Blah", 
@@ -2405,7 +2405,7 @@
         }, 
         {
             "text": "Burger with the lot is awesome.  It may sound strange but it is not at all - super good!  Also, on wednesdays it is 5 bucks!", 
-            "sentiment": "P"
+            "sentiment": "U"
         }, 
         {
             "text": "Sticky Day !!!", 
@@ -2598,7 +2598,7 @@
         }, 
         {
             "text": "Very nice whiskey pours, but a limited selection.", 
-            "sentiment": "P"
+            "sentiment": "U"
         }, 
         {
             "text": "Come for an early lunch and enjoy a gorgeous view with minimal crowd noise", 
@@ -3445,7 +3445,7 @@
         }, 
         {
             "text": "Beef noodle soup is good but sometimes inconsistent and salty", 
-            "sentiment": "P"
+            "sentiment": "U"
         }, 
         {
             "text": "Tsunami & Boracay are my favorite flavors!", 
@@ -3497,7 +3497,7 @@
         }, 
         {
             "text": "The chili is spicy as hell! Don't do it!", 
-            "sentiment": "P"
+            "sentiment": "N"
         }, 
         {
             "text": "Wild karaoke night Thursdays", 
@@ -4965,7 +4965,7 @@
         }, 
         {
             "text": "Food here is okay.  View is nice.  But some of the waiters are absolutely CLUELESS.", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Ask for the special mussels and the creme br\u00fbl\u00e9e. Amazing!", 
@@ -5686,7 +5686,7 @@
         }, 
         {
             "text": "dirty chai latte (chai latte with a shot of expresso)", 
-            "sentiment": "P"
+            "sentiment": "U"
         }
     ], 
     "4bf7ebac5ec320a14eb587d3": [
@@ -5939,7 +5939,7 @@
         }, 
         {
             "text": "It's New Year's 2012 in Times Square! Check out our website for the OFFICIAL news, schedules, FAQ's, & everything you need to know about celebrating NYE in Times Square! http://www.timessquarenyc.org", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Join us on September 8th from 6-11 as we celebrate Fashions Night Out. Not only will you be able to browse and shop our fall collection, we\u2019ll also be serving tasty treats courtesy of The Treats Truck", 
@@ -6300,7 +6300,7 @@
         }, 
         {
             "text": "Great food, horrendous wait.", 
-            "sentiment": "N"
+            "sentiment": "U"
         }, 
         {
             "text": "Don't expect any refills on your drink, and if the place isn't busy the staff will hide or watch the TV. Food is good, over priced though. Enjoy.", 

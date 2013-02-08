@@ -169,7 +169,6 @@
 0.25	0.125	inert
 0.125	0.0	sedentary
 0.0	0.125	activated
-0.0	0.625	off
 0.0	0.625	retired
 0.25	0.125	brisk
 0.5	0.0	bustling
@@ -211,7 +210,7 @@
 0.0	0.125	unaddicted
 0.5	0.0	clean
 0.0	0.625	habit-forming
-0.0	0.625	addictive
+0.625	0.0	addictive
 0.25	0.5	nonaddictive
 0.0	0.375	additive
 0.5	0.0	addible
@@ -227,7 +226,7 @@
 0.0	0.625	wanting
 0.0	0.625	lacking
 0.0	0.625	deficient
-0.0	0.25	incompetent
+0.0	0.75	incompetent
 0.0	0.25	incapable
 0.0	0.75	understaffed
 0.0	0.75	undermanned
@@ -418,7 +417,7 @@
 0.0	0.625	nonaggressive
 0.0	0.5	agitated
 0.25	0.5	worked_up
-0.25	0.5	excited
+0.5	0.25	excited
 0.25	0.5	emotional
 0.25	0.5	aroused
 0.0	0.125	overwrought
@@ -453,7 +452,6 @@
 0.0	0.5	annoying
 0.333	0.667	harsh
 0.333	0.667	abrasive
-0.0	0.625	trying
 0.0	0.625	stressful
 0.0	0.625	nerve-wracking
 0.0	0.625	nerve-racking
@@ -928,7 +926,6 @@
 0.0	0.625	untouchable
 0.0	0.625	unprocurable
 0.0	0.625	unobtainable
-0.125	0.5	awake
 0.0	0.625	insomniac
 0.125	0.375	unsleeping
 0.5	0.125	somnolent
@@ -1001,7 +998,7 @@
 0.0	0.25	petrifying
 0.25	0.125	stupefying
 0.0	0.625	terrifying
-0.0	0.625	terrific
+0.625	0.0	terrific
 0.5	0.0	reassuring
 0.375	0.125	soothing
 0.375	0.125	assuasive
@@ -1035,7 +1032,6 @@
 0.0	0.125	overbold
 0.0	0.125	impudent
 0.0	0.125	impertinent
-0.0	0.125	fresh
 0.0	0.5	presumptuous
 0.0	0.5	assuming
 0.0	0.5	unbalconied
@@ -1701,7 +1697,8 @@
 0.0	0.625	dismal
 0.0	0.625	disconsolate
 0.0	0.625	dingy
-0.0	0.625	dark
+0.75	0.0	incredible
+0.5	0.0	yay
 0.0	0.625	sombre
 0.0	0.625	somber
 0.0	0.625	melancholy
@@ -1809,6 +1806,7 @@
 0.0	0.75	dirty-faced
 0.0	0.25	feculent
 0.0	0.875	nasty
+0.0	0.875	nastiest
 0.0	0.875	foul
 0.0	0.875	filthy
 0.0	0.75	squalid
@@ -2059,8 +2057,8 @@
 0.0	0.375	nonexplosive
 0.25	0.0	lighted
 0.0	0.5	unkindled
-0.0	0.75	comfy
-0.0	0.75	comfortable
+0.75	0.0	comfy
+0.75	0.0	comfortable
 0.125	0.0	snug
 0.125	0.0	cosy
 0.125	0.5	homy
@@ -2095,7 +2093,7 @@
 0.0	0.5	uncommercialised
 0.0	0.125	nonresidential
 0.25	0.0	commissioned
-0.375	0.125	ordinary
+0.125	0.375	ordinary
 0.0	0.625	average
 0.75	0.0	popular
 0.125	0.0	frequent
@@ -2476,7 +2474,12 @@
 0.5	0.0	big
 0.75	0.0	biggest
 0.0	0.875	gross
+0.0	0.875	grossest
+0.75	0.0	impress
+0.75	0.0	impressed
 0.0	0.875	flagrant
+0.0	0.75	hooker
+0.0	0.75	hookers
 0.0	0.875	egregious
 0.0	0.875	crying
 0.375	0.25	marked
@@ -3096,7 +3099,6 @@
 0.0	0.875	downhearted
 0.0	0.875	downcast
 0.0	0.875	down_in_the_mouth
-0.0	0.875	down
 0.0	0.875	dispirited
 0.0	0.875	depressed
 0.0	0.625	glum
@@ -3305,7 +3307,7 @@
 0.0	0.75	rocky
 0.0	0.875	troublesome
 0.0	0.625	vexed
-0.25	0.5	effortless
+0.25	0.0	easy
 0.375	0.5	cushy
 0.25	0.5	unproblematic
 0.25	0.5	uncomplicated
@@ -3532,7 +3534,6 @@
 0.125	0.0	hopped-up
 0.0	0.5	drug-free
 0.25	0.0	teetotal
-0.25	0.0	dry#
 0.0	0.125	unintoxicated
 0.0	0.125	uninebriated
 0.25	0.0	blunted
@@ -3696,7 +3697,6 @@
 0.25	0.125	streamlined
 0.0	0.5	inefficient
 0.0	0.375	bruising
-0.375	0.125	strong#
 0.375	0.125	firm
 0.0	0.5	strong-arm
 0.0	0.5	physical
@@ -4235,6 +4235,7 @@
 0.0	0.75	overpriced
 0.0	0.25	inexpensive
 0.0	0.5	cheap
+0.0	0.5	cheapest
 0.125	0.25	cut-rate
 0.125	0.25	cut-price
 0.125	0.25	bargain-priced
@@ -4348,7 +4349,6 @@
 0.625	0.0	playable
 0.125	0.625	unplayable
 0.0	0.125	out-of-bounds
-0.625	0.0	just
 0.375	0.0	sportsmanlike
 0.375	0.0	sporting
 0.0	0.25	fair-minded
@@ -4389,6 +4389,8 @@
 0.125	0.875	inerrant
 0.125	0.875	inerrable
 0.625	0.0	acquainted
+0.75	0.0	kickass
+0.625	0.0	addicted
 0.0	0.125	well-known
 0.0	0.125	long-familiar
 0.0	0.625	unfamiliar
@@ -4570,6 +4572,7 @@
 0.5	0.25	congratulatory
 0.125	0.0	well-chosen
 0.625	0.0	happy
+0.625	0.0	happiest
 0.125	0.25	well-turned
 0.625	0.0	well-wishing
 0.0	0.75	infelicitous
@@ -4729,6 +4732,9 @@
 0.75	0.0	providential
 0.75	0.0	miraculous
 0.75	0.0	heaven-sent
+0.75	0.0	heaven
+0.75	0.0	heavenly
+0.75	0.0	extraordinaire
 0.5	0.0	well-off
 0.0	0.75	disastrous
 0.0	0.75	calamitous
@@ -4824,12 +4830,12 @@
 0.0	0.125	prisonlike
 0.25	0.0	freeborn
 0.0	0.625	infrequent
-0.375	0.625	fresh
+0.625	0.0	fresh
 0.5	0.375	caller
 0.375	0.125	unspoilt
 0.375	0.125	undecomposed
 0.5	0.0	new-made
-0.5	0.25	stale
+0.0	0.75	stale
 0.0	0.75	addled
 0.0	0.75	spoiled
 0.0	0.125	cold
@@ -4839,7 +4845,7 @@
 0.0	0.5	limp
 0.0	0.375	mouldy
 0.0	0.375	moldy
-0.0	0.25	rotten
+0.75	0.25	rotten
 0.0	0.5	tainted
 0.0	0.5	corrupt
 0.0	0.625	unprocessed
@@ -4853,6 +4859,7 @@
 0.0	0.375	saliferous
 0.25	0.125	saltish
 0.75	0.125	friendly
+0.75	0.125	friendliest
 0.625	0.0	genial
 0.625	0.0	cordial
 0.625	0.0	amiable
@@ -4921,8 +4928,6 @@
 0.0	0.375	laden
 0.0	0.125	overloaded
 0.0	0.125	overladen
-0.0	0.75	sperm-filled
-0.0	0.375	stuffed
 0.0	0.5	untasted
 0.125	0.25	well-lined
 0.0	0.5	blank
@@ -5021,7 +5026,7 @@
 0.364	0.636	echt
 0.4	0.6	veritable
 0.4	0.6	bona_fide
-0.4	0.75	authentic
+0.75	0.0	authentic
 0.5	0.25	authenticated
 0.5	0.25	attested
 0.5	0.0	sure-enough
@@ -5413,6 +5418,7 @@
 0.0	0.75	windburnt
 0.0	0.75	windburned
 0.0	0.75	dry
+0.0	0.75	drying
 0.5	0.375	phlegmy
 0.375	0.0	ambrosian
 0.375	0.0	ambrosial
@@ -5445,7 +5451,6 @@
 0.125	0.0	ponderous
 0.25	0.0	weighty
 0.0	0.75	light-duty
-0.25	0.375	industrial
 0.125	0.375	taxing
 0.125	0.375	onerous
 0.125	0.375	burdensome
@@ -5538,7 +5543,7 @@
 0.0	0.5	low-ceilinged
 0.25	0.5	low-interest
 0.25	0.5	high-interest
-0.125	0.25	higher
+0.5	0.125	higher
 0.25	0.0	utmost
 0.375	0.0	soaring
 0.0	0.125	devalued
@@ -5959,6 +5964,7 @@
 0.5	0.0	conversant
 0.375	0.0	hip_to
 0.375	0.0	hip
+0.375	0.0	hipster
 0.375	0.0	hep
 0.125	0.0	privy
 0.25	0.125	uninformed
@@ -6624,7 +6630,8 @@
 0.375	0.125	preferent
 0.675	0.125	favourite
 0.675	0.125	favourites
-0.375	0.125	favorite
+0.675	0.125	favorite
+0.675	0.125	favorites
 0.375	0.125	favored
 0.375	0.125	best-loved
 0.0	0.125	unloved
@@ -6669,7 +6676,6 @@
 0.5	0.0	attractable
 0.0	0.375	antimagnetic
 0.0	0.625	nonmagnetic
-0.0	0.125	major
 0.0	0.25	minor
 0.0	0.75	nonaged
 0.125	0.0	stellar
@@ -6827,7 +6833,7 @@
 0.0	0.125	intensified
 0.5	0.125	intensive
 0.0	0.875	wicked
-0.125	0.875	strong
+0.75	0.0	strong
 0.375	0.125	unabated
 0.125	0.0	up_to_your_neck
 0.125	0.0	up_to_their_necks
@@ -7095,7 +7101,6 @@
 0.0	0.375	psychosomatic
 0.0	0.625	schizoid
 0.0	0.375	unneurotic
-0.375	0.0	together
 0.75	0.0	pleasant
 0.0	0.875	grotty
 0.875	0.0	dignifying
@@ -7358,7 +7363,7 @@
 0.25	0.375	disorderly
 0.0	0.375	rumbustious
 0.0	0.375	robustious
-0.0	0.375	rambunctious
+0.5	0.0	rambunctious
 0.0	0.25	moblike
 0.0	0.25	mobbish
 0.125	0.0	rowdy
@@ -7392,7 +7397,6 @@
 0.125	0.0	unremarkable
 0.125	0.0	quotidian
 0.556	0.444	so-so
-0.5	0.0	so
 0.125	0.375	unexceptional
 0.125	0.375	run-of-the-mine
 0.125	0.375	run-of-the-mill
@@ -7629,7 +7633,6 @@
 0.0	0.125	prehistorical
 0.0	0.125	present
 0.0	0.125	future_day
-0.0	0.25	early
 0.125	0.0	in_store
 0.0	0.125	unborn
 0.0	0.5	unparented
@@ -7805,6 +7808,8 @@
 0.125	0.375	acid-fast
 0.25	0.125	greaseproof
 0.0	0.75	mothproof
+0.0	0.75	moth
+0.0	0.75	moths
 0.0	0.75	moth-resistant
 0.0	0.125	proof
 0.125	0.625	corrosion-resistant
@@ -7952,8 +7957,9 @@
 0.375	0.25	chuffed
 0.5	0.0	gratified
 0.125	0.75	displeased
+0.0	0.5	touristy
+0.75	0.0	ftw
 0.0	0.625	stung
-0.0	0.625	steamed
 0.0	0.625	roiled
 0.0	0.625	riled
 0.0	0.625	pissed_off
@@ -8093,7 +8099,6 @@
 0.75	0.0	skillful
 0.625	0.125	on_the_nose
 0.625	0.125	on_the_button
-0.5	0.0	very
 0.25	0.5	imprecise
 0.0	0.375	retarded
 0.25	0.0	slow-witted
@@ -9101,7 +9106,7 @@
 0.375	0.0	o.k.
 0.375	0.0	hunky-dory
 0.375	0.0	all_right
-0.0	0.25	alright
+0.25	0.0	alright
 0.25	0.0	satisfying
 0.625	0.0	comforting
 0.25	0.0	cheering
@@ -10297,6 +10302,7 @@
 0.75	0.25	nectarous
 0.125	0.25	semisweet
 0.8	0.25	yummy
+0.8	0.25	mmm
 0.75	0.25	scrumptious
 0.75	0.25	pleasant-tasting
 0.0	0.5	saporous
@@ -11709,7 +11715,6 @@
 0.625	0.0	strike
 0.625	0.0	smasher
 0.625	0.0	smash
-0.625	0.0	bang
 0.0	0.75	conquest
 0.5	0.25	coup
 0.5	0.0	flying_colours
@@ -11816,7 +11821,7 @@
 0.125	0.0	shellfire
 0.0	0.125	potshot
 0.0	0.125	contusion
-0.0	0.125	blast
+0.5	0.125	blast
 0.0	0.25	pop_fly
 0.0	0.25	pop-up
 0.0	0.25	pop-fly
@@ -12713,7 +12718,7 @@
 0.125	0.0	goldbrick
 0.0	0.125	scam
 0.0	0.125	cozenage
-0.625	0.0	cheat
+0.0	0.625	cheat
 0.0	0.125	simulation
 0.0	0.125	pretense
 0.0	0.125	pretending
@@ -13098,7 +13103,6 @@
 0.0	0.125	shading
 0.0	0.125	blending
 0.25	0.0	electromyography
-0.125	0.0	test
 0.125	0.0	psychometric_test
 0.125	0.0	mental_testing
 0.125	0.0	mental_test
@@ -15862,6 +15866,7 @@
 0.125	0.0	hone
 0.0	0.125	honkytonk
 0.0	0.125	dive
+0.0	0.125	divey
 0.5	0.0	lens_hood
 0.0	0.375	hoodoo
 0.25	0.0	hoover
@@ -17238,7 +17243,7 @@
 0.125	0.5	wart
 0.125	0.5	verruca
 0.25	0.125	common_wart
-0.0	0.5	simplicity
+0.5	0.0	simplicity
 0.0	0.5	simpleness
 0.0	0.5	restraint
 0.0	0.5	chasteness
@@ -17631,6 +17636,7 @@
 0.0	0.375	stochasticity
 0.0	0.375	randomness
 0.0	0.375	noise
+0.0	0.375	noisy
 0.0	0.375	haphazardness
 0.125	0.375	spasticity
 0.0	0.625	jaggedness
@@ -18898,9 +18904,9 @@
 0.125	0.25	heftiness
 0.125	0.25	brawniness
 0.125	0.25	brawn
-0.375	0.5	power
+0.5	0.0	power
+0.75	0.0	delish
 0.375	0.5	mightiness
-0.375	0.5	might
 0.25	0.0	stoutness
 0.25	0.0	stalwartness
 0.25	0.0	soundness
@@ -19821,7 +19827,6 @@
 0.625	0.0	garden_of_eden
 0.625	0.0	eden
 0.375	0.125	paradise
-0.0	0.5	pit
 0.0	0.5	perdition
 0.0	0.5	nether_region
 0.0	0.5	inferno
@@ -20245,7 +20250,6 @@
 0.0	0.5	reject
 0.0	0.5	cull
 0.125	0.0	wish
-0.625	0.0	way
 0.0	0.75	msg
 0.0	0.75	ugh
 0.0	0.125	impossible_action
@@ -20285,6 +20289,9 @@
 0.25	0.0	conversation_piece
 0.375	0.0	cynosure
 0.75	0.0	love
+0.75	0.0	loves
+0.5	0.0	affordable
+0.5	0.0	legit
 0.25	0.0	thing-in-itself
 0.25	0.0	noumenon
 0.125	0.0	issue
@@ -21090,7 +21097,7 @@
 0.125	0.0	wish-wash
 0.125	0.0	trumpery
 0.125	0.0	tripe
-0.125	0.0	trash
+0.0	0.75	trash
 0.125	0.0	rubbish
 0.125	0.0	folderol
 0.125	0.0	codswallop
@@ -21252,7 +21259,9 @@
 0.5	0.0	seal
 0.5	0.0	cachet
 0.125	0.0	citation
-0.5	0.0	mention
+0.0	0.85	yuck
+0.0	0.75	argued
+0.0	0.75	argue
 0.5	0.0	honorable_mention
 0.125	0.0	distinguished_service_cross
 0.125	0.0	navy_cross
@@ -21733,7 +21742,7 @@
 0.0	0.125	hoot
 0.0	0.125	hiss
 0.0	0.125	bronx_cheer
-0.0	0.125	boo
+0.0	0.625	boo
 0.125	0.25	smut
 0.125	0.25	filth
 0.125	0.25	dirty_word
@@ -21892,7 +21901,6 @@
 0.5	0.0	demand
 0.0	0.125	insisting
 0.5	0.0	purism
-0.25	0.0	challenge
 0.125	0.25	query
 0.125	0.25	interrogation
 0.125	0.25	inquiry
@@ -22831,7 +22839,6 @@
 0.125	0.0	marzipan
 0.125	0.0	marchpane
 0.125	0.0	sugar_candy
-0.0	0.125	pudding
 0.0	0.375	quiche
 0.125	0.0	quiche_lorraine
 0.125	0.0	suet_pudding
@@ -23573,7 +23580,10 @@
 0.0	0.5	slum_area
 0.0	0.5	slum
 0.125	0.0	seam
-0.125	0.0	bed
+0.0	0.75	wouldnt
+0.0	0.75	couldnt
+0.0	0.75	doesnt
+0.0	0.75	didnt
 0.0	0.625	orphan_site
 0.0	0.125	tropics
 0.0	0.125	tropical_zone
@@ -24753,7 +24763,8 @@
 0.125	0.0	dreamer
 0.0	0.125	retard
 0.0	0.125	moron
-0.0	0.125	idiot
+0.0	0.5	idiot
+0.0	0.5	idiots
 0.0	0.125	cretin
 0.0	0.125	changeling
 0.0	0.625	matinee_idol
@@ -24852,6 +24863,7 @@
 0.0	0.375	lazar
 0.0	0.625	prevaricator
 0.0	0.625	liar
+0.0	0.625	liars
 0.5	0.0	libertarian
 0.125	0.0	liege_lord
 0.0	0.125	lifesaver
@@ -24876,7 +24888,6 @@
 0.0	0.5	unsuccessful_person
 0.0	0.5	nonstarter
 0.0	0.75	underdog
-0.5	0.0	lot
 0.25	0.0	lothario
 0.0	0.5	underclassman
 0.0	0.5	lowerclassman
@@ -24905,9 +24916,9 @@
 0.375	0.0	maharaja
 0.125	0.0	maharani
 0.125	0.0	maharanee
-0.0	0.25	mahatma
+0.25	0.0	mahatma
 0.0	0.125	maiden
-0.0	0.125	maid
+0.625	0.0	regale
 0.0	0.25	maiden_aunt
 0.5	0.0	seneschal
 0.5	0.0	major-domo
@@ -27741,7 +27752,7 @@
 0.0	0.125	pissing
 0.0	0.125	piss
 0.0	0.125	peeing
-0.0	0.125	pee
+0.0	0.75	pee
 0.0	0.25	precocious_dentition
 0.25	0.0	premature_ejaculation
 0.25	0.0	processing
@@ -31504,10 +31515,7 @@
 0.5	0.25	just_about
 0.5	0.25	close_to
 0.5	0.25	approximately
-0.5	0.0	absolutely
 0.5	0.0	wholly
-0.5	0.0	totally
-0.5	0.0	total
 0.5	0.0	entirely
 0.5	0.0	completely
 0.5	0.0	utterly
@@ -31537,7 +31545,9 @@
 0.0	0.5	naughtily
 0.0	0.5	mischievously
 0.0	0.625	rather
-0.625	0.0	quite
+0.0	0.75	dont
+0.0	0.75	cant
+0.0	0.75	wont
 0.5	0.375	quite_an
 0.5	0.375	quite_a
 0.125	0.0	conjecturally
@@ -31577,7 +31587,6 @@
 0.25	0.625	futilely
 0.0	0.25	no_more
 0.0	0.25	no_longer
-0.5	0.0	incredibly
 0.25	0.0	fantastically
 0.25	0.0	fabulously
 0.125	0.0	mightily
@@ -31614,11 +31623,10 @@
 0.25	0.0	unquestionably
 0.25	0.0	in_spades
 0.25	0.0	emphatically
-0.25	0.0	definitely
+0.75	0.0	definitely
 0.25	0.0	decidedly
 0.25	0.0	by_all_odds
 0.625	0.0	truly
-0.625	0.0	really
 0.625	0.0	genuinely
 0.125	0.625	in_the_lurch
 0.5	0.0	in_truth
@@ -31676,7 +31684,6 @@
 0.125	0.0	far_and_away
 0.125	0.0	by_far
 0.625	0.0	head_and_shoulders_above
-0.625	0.25	too
 0.125	0.25	to_a_fault
 0.125	0.25	overly
 0.125	0.25	excessively
@@ -31759,7 +31766,6 @@
 0.25	0.0	a_lot
 0.25	0.0	a_great_deal
 0.25	0.0	a_good_deal
-0.375	0.0	often
 0.5	0.0	in_effect
 0.5	0.0	effectively
 0.375	0.0	de_facto
@@ -31773,7 +31779,6 @@
 0.375	0.0	on_purpose
 0.375	0.0	intentionally
 0.375	0.0	designedly
-0.375	0.0	deliberately
 0.375	0.0	by_design
 0.375	0.0	by_choice
 0.375	0.0	advisedly
@@ -31907,7 +31912,6 @@
 0.25	0.125	marginally
 0.25	0.375	perilously
 0.25	0.375	hazardously
-0.25	0.375	dangerously
 0.5	0.0	wearily
 0.5	0.0	tiredly
 0.125	0.0	vitally
@@ -32517,7 +32521,6 @@
 0.125	0.0	infinitely
 0.125	0.0	immeasurably
 0.125	0.0	boundlessly
-0.25	0.0	strictly
 0.25	0.0	rigorously
 0.0	0.25	vauntingly
 0.0	0.25	boastfully
@@ -33058,7 +33061,7 @@
 0.25	0.0	treacherously
 0.25	0.0	traitorously
 0.25	0.0	faithlessly
-0.25	0.0	falsely
+0.0	0.5	falsely
 0.125	0.0	familiarly
 0.25	0.0	fanatically
 0.125	0.0	whimsically
@@ -34360,14 +34363,13 @@
 0.125	0.25	intensify
 0.125	0.25	deepen
 0.0	0.125	redouble
-0.125	0.25	heighten
+0.25	0.125	heighten
 0.5	0.0	enhance
 0.0	0.25	subside
 0.0	0.25	lessen
 0.0	0.125	breathe
 0.0	0.25	shrink
 0.0	0.25	reduce
-0.0	0.125	blast#
 0.25	0.0	die_down
 0.25	0.0	die_back
 0.25	0.0	mummify
@@ -35319,7 +35321,8 @@
 0.0	0.375	find_fault
 0.125	0.0	accuse
 0.0	0.625	arraign
-0.25	0.0	complain
+0.0	0.85	complain
+0.0	0.85	complained
 0.0	0.25	impeach
 0.125	0.375	peck
 0.125	0.375	nag
@@ -35389,6 +35392,7 @@
 0.375	0.0	ensky
 0.375	0.0	herald
 0.0	0.25	rip
+0.0	0.25	ripped
 0.0	0.5	whip
 0.125	0.375	excoriate
 0.125	0.375	decry
@@ -35824,10 +35828,11 @@
 0.0	0.25	famish
 0.5	0.0	crave
 0.0	0.125	keep_off
-0.0	0.125	avoid
+0.0	0.625	avoid
 0.125	0.25	souse
 0.125	0.25	hit_it_up
 0.75	0.0	enjoy
+0.75	0.0	enjoying
 0.0	0.25	have_a_good_time
 0.0	0.25	have_a_ball
 0.0	0.125	live_it_up
@@ -35999,6 +36004,7 @@
 0.375	0.125	sleep_with
 0.375	0.125	sleep_together
 0.375	0.125	screw
+0.0	0.75	screwed
 0.375	0.125	roll_in_the_hay
 0.375	0.125	make_love
 0.375	0.125	lie_with
@@ -36010,7 +36016,8 @@
 0.375	0.125	have_a_go_at_it
 0.375	0.125	get_laid
 0.375	0.125	get_it_on
-0.375	0.125	fuck
+0.0	0.85	fuck
+0.0	0.85	fucking
 0.375	0.125	eff
 0.375	0.125	do_it
 0.375	0.125	be_intimate
@@ -36626,8 +36633,9 @@
 0.0	0.25	solarise
 0.0	0.25	benumb
 0.125	0.25	bedaze
+0.0	0.75	dawdle
+0.0	0.75	dawdling
 0.125	0.0	besot
-0.125	0.0	suck
 0.125	0.0	go_down_on
 0.125	0.0	fellate
 0.0	0.125	hallucinate
@@ -36729,6 +36737,7 @@
 0.0	0.125	change_taste
 0.375	0.0	get_off
 0.0	0.8	sucks
+0.0	0.8	suck
 0.5	0.0	see_through
 0.25	0.0	have_got
 0.125	0.0	monopolize
@@ -37062,7 +37071,6 @@
 0.125	0.0	chase
 0.0	0.5	pull_wires
 0.0	0.5	pull_strings
-0.0	0.5	sell
 0.0	0.125	double_cross
 0.125	0.0	come_of_age
 0.0	0.125	toe_the_line
@@ -37298,7 +37306,8 @@
 0.625	0.125	matter_to
 0.625	0.0	measure_up
 0.125	0.0	expire
-0.0	0.125	stud
+0.5	0.0	stud
+0.75	0.0	oasis
 0.0	0.125	constellate
 0.0	0.375	sit_around
 0.125	0.0	subtend

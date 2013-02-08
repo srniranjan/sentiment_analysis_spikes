@@ -121,6 +121,11 @@
 			- Every document will have one feature for every word it has in common with the words chosen above
 			
 		1.4.2 Confusion matrices
+		     |      N |      P |      U
+		-----------------------------------
+		   N |    844 |     44 |    722
+		   P |    121 |   1141 |   1166
+		   U |    354 |    266 |   1534
 			
 	1.5 Pros of ML approach:
 		- Very little or almost no manual work needed, we just have to be smart in picking feature sets
@@ -160,12 +165,22 @@
 			- Calculate the sentiment of the sentence and review as in approach 1
 			- code: senti_wn_with_parser.py
 			- rsults file: sents_parser_output.txt
-		2.1.2 Confusion matrix: (0.62)
-		
-		  |   N   P   U |
-		--+-------------+
-		N |<100> 60  69 | 229
-		P |  46<720>232 | 998
-		U |  46 192<214>| 452
-		--+-------------+
-			192 972 515   1679
+
+		2.1.2 Confusion matrix: 		
+			- Parse 1: (0.62)
+				  |   N   P   U |
+				--+-------------+
+				N |<100> 60  69 | 229
+				P |  46<720>232 | 998
+				U |  46 192<214>| 452
+				--+-------------+
+					192 972 515   1679
+
+			- Parse 2: (0.65)
+				  |   N   P   U |
+				--+-------------+
+				N |<117> 38  68 | 223
+				P |  38<759>195 | 992
+				U |  46 184<234>| 464
+				--+-------------+
+					201 981 497   1679 

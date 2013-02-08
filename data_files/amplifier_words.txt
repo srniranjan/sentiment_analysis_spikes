@@ -1,0 +1,17 @@
+0.5	very
+0.5	absolutely
+0.625	really
+0.5	totally
+0.5	total
+0.625	too
+0.625	super
+0.625	way
+0.5	incredibly
+0.5	so
+0.25	dangerously
+0.5	lot
+0.625	quite
+0.5	most
+0.625	highly
+0.625	extremely
+0.5	always
