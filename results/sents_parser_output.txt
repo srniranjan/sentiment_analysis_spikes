@@ -56,9 +56,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('shut', 'N'), ('-', ':'), ('the', 'DET'), ('-', ':'), ('cunt', 'N'), ('-', ':'), ('up', 'P'), (';', ':'), ('it', 'PRO'), ("'", "''"), ('s', 'V'), ('breathtaking', 'VG'), ('.', '.')]
 (N try/N (NP the/DET shut/N -/:) (NP the/DET -/: cunt/N -/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.625
- 	about: ['try', 'shut']
+ 	about: ['shut']
 (N it/PRO):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -1151,14 +1151,14 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('dark', 'N'), ("'", 'U'), ('n', 'N'), ('stormy', 'N'), ('!', '.')]
 (N try/N (NP the/DET dark/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'dark']
+ 	about: ['dark']
 (N n/N stormy/N):
 	has positive sentiment of 0
 	has negative sentiment of 0.75
  	about: ['n']
-N
+U
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
@@ -1301,16 +1301,16 @@ U
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('flowers', 'N'), ('on', 'P'), ('the', 'DET'), ('wall', 'N'), ('.', '.')]
 (N try/N (NP the/DET flowers/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'flowers']
+ 	about: ['flowers']
 (N (NP the/DET wall/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['wall']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('they', 'PRO'), ('have', 'V'), ('a', 'DET'), ('pretty', 'ADV'), ('good', 'ADJ'), ('gouda', 'N'), ('cheese', 'N'), ('sandwich', 'N')]
 (N
@@ -1518,9 +1518,9 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('404', 'NUM'), ('if', 'P'), ('you', 'PRO'), ('like', 'V'), ('your', 'PRO'), ('drinks', 'N'), ('on', 'P'), ('the', 'DET'), ('fruity', 'N'), ('(', ':'), ('but', 'CNJ'), ('not', 'ADV'), ('too', 'ADV'), ('sweet', 'ADJ'), (')', 'N'), ('side', 'N'), ('.', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N (NP you/PRO like/V your/PRO drinks/N)):
 	has positive sentiment of 0.75
 	has negative sentiment of 0
@@ -1576,9 +1576,9 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('"', 'N'), ('milk', 'N'), ('punch', 'N'), ('"', ':'), ('as', 'P'), ('an', 'DET'), ('amazing', 'N'), ('night', 'N'), ('cap', 'N'), ('.', '.')]
 (N try/N (NP the/DET "/N milk/N punch/N "/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', '"', 'milk', 'punch']
+ 	about: ['"', 'milk', 'punch']
 	(A food concept!)
 (N (NP an/DET amazing/N night/N cap/N)):
 	has positive sentiment of 0.875
@@ -2736,17 +2736,17 @@ U
 +++++++++
 [('try', 'N'), ('one', 'NUM'), ('out', 'PRO'), ('before', 'P'), ('purchasing', 'VG'), ('an', 'DET'), ('e', 'N'), ('-', ':'), ('reader', 'N'), ('.', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N (NP out/PRO before/P purchasing/VG an/DET e/N -/: reader/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['e', 'reader']
 	(A food concept!)
-U
+P
 +++++++++
-U ---> U
+U ---> P
 ~~~~~~~~~~~~
 [('download', 'N'), ('audiobooks', 'N'), ('from', 'P'), ('overdrive', 'ADJ'), ('at', 'P'), ('the', 'DET'), ('download', 'N'), ('station', 'N'), ('!', '.')]
 (N download/N audiobooks/N):
@@ -2763,9 +2763,9 @@ U ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('out', 'P'), ('the', 'DET'), ('big', 'ADJ'), ('scanner', 'N'), ('-', ':'), ('can', 'MOD'), ('print', 'V'), ('out', 'PRO'), (',', ','), ('scan', 'ADJ'), ('to', 'TO'), ('usb', 'V'), ('or', 'CNJ'), ('email', 'V'), ('.', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N (NP the/DET big/ADJ scanner/N -/:)):
 	has positive sentiment of 0.5
 	has negative sentiment of 0
@@ -3146,6 +3146,7 @@ U ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['something']
+eat --- has positive sentiment of 0.5
 (N something/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -3233,9 +3234,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('fish', 'ADJ'), ('and', 'CNJ'), ('chips', 'N'), (',', ','), ('they', 'PRO'), ("'", "''"), ('re', 'N'), ('amazing', 'VG'), ('!', '.')]
 (N try/N (NP the/DET fish/ADJ)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N chips/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -4415,9 +4416,9 @@ P ---> P
 	has negative sentiment of 0.6875
  	about: ['staff', 'bar']
 (N try/N union/N squre/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'union', 'squre']
+ 	about: ['union', 'squre']
 (N (NP a/DET better/ADJ hotel/N)):
 	has positive sentiment of 0.75
 	has negative sentiment of 0
@@ -4851,11 +4852,11 @@ P
 +++++++++
 [('try', 'N'), ('their', 'PRO'), ('burgers', 'N'), ('.', '.')]
 (N try/N (NP their/PRO burgers/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'burgers']
+ 	about: ['burgers']
 	(A food concept!)
-U
+P
 +++++++++
 [('this', 'DET'), ('spot', 'N'), ('could', 'MOD'), ('easily', 'ADV'), ('go', 'V'), ('under', 'P'), ('""', 'NUM'), ('best', 'ADJ'), ('burger', 'N'), ('in', 'P'), ('manhattan', 'N'), ('""', ':')]
 (N (NP this/DET spot/N)):
@@ -5525,15 +5526,15 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('public', 'N'), ('burger', 'N'), ('or', 'CNJ'), ('reuben', 'VN'), (',', ','), ('etc', 'N'), ('...', ':')]
 (N try/N (NP the/DET public/N burger/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'public', 'burger']
+ 	about: ['public', 'burger']
 	(A food concept!)
 (N etc/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['etc']
-U
+P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
@@ -5778,13 +5779,13 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('goat', 'N'), ('cheese', 'N'), ('croquette', 'N'), ('salad', 'N'), (':)', ':')]
 (N try/N (NP the/DET goat/N cheese/N croquette/N salad/N :)/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'goat', 'cheese', 'croquette', 'salad']
+ 	about: ['goat', 'cheese', 'croquette', 'salad']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('outstanding', 'ADJ'), ('chicken', 'VN'), ('club', 'N')]
 (N (NP outstanding/ADJ chicken/VN club/N)):
@@ -5855,13 +5856,13 @@ P ---> N
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('blueberry', 'N'), ('mojitos', 'N'), ('!', '.')]
 (N try/N (NP the/DET blueberry/N mojitos/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'blueberry', 'mojitos']
+ 	about: ['blueberry', 'mojitos']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('amazing', 'VG'), ('hibachi', 'N')]
 amazing --- has positive sentiment of 0.875
@@ -6506,10 +6507,10 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('after', 'N'), ('hours', 'N'), ('jam', 'V'), ('.', '.')]
 (N try/N (NP the/DET after/N hours/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'after', 'hours']
-U
+ 	about: ['after', 'hours']
+P
 +++++++++
 [('bourbon', 'N'), (',', ','), ('apricot', 'N'), ('jam', 'N'), (',', ','), ('chipotle', 'N'), ('agave', 'VD'), (',', ','), ('lemon', 'N'), (',', ','), ('bitters', 'N'), ('.', '.')]
 (N bourbon/N):
@@ -6666,9 +6667,9 @@ P
 +++++++++
 [('will', 'MOD'), ('come', 'V'), ('back', 'ADV'), ('and', 'CNJ'), ('try', 'N'), ('something', 'N'), ('different', 'N'), ('and', 'CNJ'), ('hope', 'N'), ('it', 'PRO'), ("'", "''"), ('s', 'V'), ('edible', 'ADJ'), ('.', '.')]
 (N try/N something/N different/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'something', 'different']
+ 	about: ['something', 'different']
 (N hope/N it/PRO):
 	has positive sentiment of 0.25
 	has negative sentiment of 0
@@ -7097,13 +7098,14 @@ P ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
+eat --- has positive sentiment of 0.5
 (N (NP here/ADV crappy/ADJ service/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0.75
  	about: ['service']
-N
+U
 +++++++++
-N ---> N
+N ---> U
 ~~~~~~~~~~~~
 [('service', 'N'), ('was', 'VD'), ('so', 'ADV'), ('rediculously', 'ADV'), ('slow', 'ADJ'), ('.', '.')]
 (N service/N):
@@ -7317,14 +7319,14 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('mac', 'N'), ('and', 'CNJ'), ('cheese', 'ADJ'), ('.', '.')]
 (N try/N (NP the/DET mac/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'mac']
+ 	about: ['mac']
 (N cheese/ADJ):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
-U
+P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
@@ -7678,11 +7680,11 @@ N ---> N
 ~~~~~~~~~~~~
 [('gotta', 'N'), ('try', 'N'), ('the', 'DET'), ('piggy', 'N'), ('fries', 'N'), ('!', '.')]
 (N gotta/N try/N (NP the/DET piggy/N fries/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['gotta', 'try', 'piggy', 'fries']
+ 	about: ['gotta', 'piggy', 'fries']
 	(A food concept!)
-U
+P
 +++++++++
 [('off', 'P'), ('the', 'DET'), ('chart', 'N'), ('!', '.')]
 (N (NP the/DET chart/N)):
@@ -7691,7 +7693,7 @@ U
  	about: ['chart']
 U
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('great', 'ADJ'), ('pub', 'N'), ('...', ':'), ('our', 'PRO'), ('first', 'ADJ'), ('stop', 'N'), ('after', 'P'), ('check', 'N'), ('in', 'P'), ('at', 'P'), ('renaissance', 'N')]
 (N (NP great/ADJ pub/N .../: our/PRO first/ADJ stop/N)):
@@ -7950,6 +7952,7 @@ P ---> P
 	has positive sentiment of 0.875
 	has negative sentiment of 0
  	about: ['place']
+eat --- has positive sentiment of 0.5
 P
 +++++++++
 P ---> P
@@ -7995,10 +7998,10 @@ P
 +++++++++
 [('try', 'N'), ('em', 'N'), ('!', '.')]
 (N try/N em/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'em']
-U
+ 	about: ['em']
+P
 +++++++++
 [('!', 'N')]
 (N !/N):
@@ -8325,14 +8328,14 @@ P ---> P
 [('dont', 'N'), ('try', 'N'), ('to', 'TO'), ('ice', 'N'), ('a', 'DET'), ('bro', 'N'), ('there', 'EX'), ('.', '.')]
 (N dont/N try/N):
 	has positive sentiment of 0
-	has negative sentiment of 0
- 	about: ['try']
+	has negative sentiment of 0.5
+ 	about: []
 (N ice/N (NP a/DET bro/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['ice', 'bro']
 	(A food concept!)
-U
+N
 +++++++++
 [('a', 'DET'), ('smirnoff', 'N'), ('ice', 'N'), ('costs', 'N'), ('$', '$'), ('7', 'NUM'), ('.', '.'), ('50', 'NUM'), ('.', '.')]
 (N (NP a/DET smirnoff/N ice/N costs/N)):
@@ -8353,7 +8356,7 @@ U
  	about: ['night']
 P
 +++++++++
-U ---> P
+U ---> U
 ~~~~~~~~~~~~
 [('great', 'ADJ'), ('place', 'N'), ('to', 'TO'), ('catch', 'V'), ('a', 'DET'), ('beer', 'N'), ('after', 'P'), ('a', 'DET'), ('broadway', 'N'), ('show', 'N'), ('.', '.')]
 (N (NP great/ADJ place/N)):
@@ -9296,11 +9299,11 @@ U ---> U
  	about: ['vhf', 'smd']
 (N (NP no/DET answer/N try/N)):
 	has positive sentiment of 0
-	has negative sentiment of 0
- 	about: ['answer', 'try']
-U
+	has negative sentiment of 0.5
+ 	about: ['answer']
+N
 +++++++++
-U ---> U
+U ---> N
 ~~~~~~~~~~~~
 [('man', 'N'), (',', ','), ('no', 'DET'), ('wonder', 'N'), ('his', 'PRO'), ('aim', 'N'), ('sn', 'N'), ("'", "''"), ('s', 'N'), ('been', 'VN'), ('stinkykid427', 'NP'), ('since', 'P'), ("'", 'U'), ('01', 'NUM')]
 (N man/N):
@@ -10073,6 +10076,7 @@ P ---> U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['quad', 'cities']
+try --- has positive sentiment of 0.5
 (N (NP this/DET pizza/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -10086,9 +10090,9 @@ P ---> U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['iowa', 'hawkeyes']
-U
+P
 +++++++++
-U ---> U
+U ---> P
 ~~~~~~~~~~~~
 [('come', 'N'), ('all', 'DET'), ('the', 'DET'), ('way', 'N'), ('from', 'P'), ('davenport', 'N'), (',', ','), ('iowa', 'N'), ('(', ':'), ('quad', 'N'), ('cities', 'N'), (')', ':'), ('to', 'TO'), ('try', 'V'), ('this', 'DET'), ('pizza', 'N'), ('and', 'CNJ'), ('yes', 'N'), ('...', ':'), ('go', 'V'), ('iowa', 'N'), ('hawkeyes', 'N'), ('!', '.')]
 (N come/N (NP all/DET the/DET way/N)):
@@ -10107,6 +10111,7 @@ U ---> U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['quad', 'cities']
+try --- has positive sentiment of 0.5
 (N (NP this/DET pizza/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -10120,9 +10125,9 @@ U ---> U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['iowa', 'hawkeyes']
-U
+P
 +++++++++
-U ---> U
+U ---> P
 ~~~~~~~~~~~~
 [('get', 'N'), ('the', 'DET'), ('meat', 'N'), ('lovers', 'N'), ('slice', 'N'), ('!', '.')]
 (N get/N (NP the/DET meat/N lovers/N slice/N)):
@@ -10896,6 +10901,7 @@ P
 +++++++++
 [('must', 'MOD'), ('try', 'V'), ('.', '.')]
 must --- has positive sentiment of 0.625
+try --- has positive sentiment of 0.5
 P
 +++++++++
 P ---> P
@@ -11125,9 +11131,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('chicken', 'N'), ('and', 'CNJ'), ('shrimp', 'V'), ('pad', 'ADJ'), ('thai', 'N'), ('and', 'CNJ'), ('the', 'DET'), ('chocolate', 'N'), ('cake', 'N'), ('!', '.')]
 (N try/N (NP the/DET chicken/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'chicken']
+ 	about: ['chicken']
 	(A food concept!)
 (N (NP pad/ADJ thai/N)):
 	has positive sentiment of 0
@@ -11138,7 +11144,7 @@ P ---> P
 	has negative sentiment of 0
  	about: ['chocolate', 'cake']
 	(A food concept!)
-U
+P
 +++++++++
 [('(', 'N'), ('4', 'NUM'), ('of', 'P'), ('4', 'NUM'), ('petals', 'N'), ('via', 'P'), ('fondu', 'N'), (')', ':')]
 (N (/N):
@@ -11156,7 +11162,7 @@ U
 	(A food concept!)
 U
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('the', 'DET'), ('tamarind', 'N'), ('ribs', 'N'), ('are', 'V'), ('a', 'DET'), ('pile', 'ADJ'), ('of', 'P'), ('sticky', 'ADJ'), ('but', 'CNJ'), ('very', 'ADV'), ('satisfying', 'VG'), ('indulgences', 'N'), ('.', '.')]
 (N (NP the/DET tamarind/N ribs/N)):
@@ -11318,9 +11324,9 @@ P ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('sushi', 'N'), ('taco', 'N'), ('trio', 'N'), ('best', 'ADJ'), ('of', 'P'), ('both', 'DET'), ('worlds', 'N'), ('!', '.')]
 (N try/N (NP the/DET sushi/N taco/N trio/N best/ADJ)):
-	has positive sentiment of 0.75
+	has positive sentiment of 0.625
 	has negative sentiment of 0
- 	about: ['try', 'sushi', 'taco', 'trio']
+ 	about: ['sushi', 'taco', 'trio']
 	(A food concept!)
 (N (NP both/DET worlds/N)):
 	has positive sentiment of 0
@@ -11498,9 +11504,9 @@ P
 	has negative sentiment of 0
  	about: ['availability']
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N saturday/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -11550,9 +11556,9 @@ P
 	has negative sentiment of 0
  	about: ['availability']
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N saturday/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -11739,17 +11745,17 @@ U
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('double', 'ADJ'), ('pan', 'N'), ('fried', 'VD'), ('noodles', 'N'), ('!', '.')]
 (N try/N (NP the/DET double/ADJ pan/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'pan']
+ 	about: ['pan']
 (N noodles/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['noodles']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('no', 'DET'), ('visit', 'N'), ('to', 'TO'), ('the', 'DET'), ('hershey', 'N'), ("'", 'U'), ('s', 'N'), ('store', 'V'), ('in', 'P'), ('times', 'N'), ('square', 'V'), ('should', 'MOD'), ('be', 'V'), ('complete', 'ADJ'), ('without', 'P'), ('getting', 'N'), ('your', 'PRO'), ('hands', 'N'), ('on', 'P'), ('some', 'DET'), ('scharffen', 'N'), ('berger', 'N'), ('chocolate', 'N'), ('!', '.')]
 (N (NP no/DET visit/N)):
@@ -12067,9 +12073,9 @@ P
 	has negative sentiment of 0
  	about: ['availability']
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N saturday/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -12680,10 +12686,10 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('sproles', 'N'), ('.', '.')]
 (N try/N (NP the/DET sproles/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'sproles']
-U
+ 	about: ['sproles']
+P
 +++++++++
 [('request', 'N'), ('them', 'PRO'), ('fried', 'VD'), (',', ','), ('not', 'ADV'), ('grilled', 'VN'), ('.', '.')]
 (N request/N them/PRO):
@@ -12704,7 +12710,7 @@ N
  	about: ['connecticut']
 P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('mac', 'N'), ('&', 'CNJ'), ('cheese', 'ADJ'), ('+', 'N'), ('pulled', 'VD'), ('pork', 'N'), ('sliders', 'N'), ('=', ':'), ('delicious', 'ADJ'), ('.', '.')]
 (N mac/N):
@@ -12832,11 +12838,11 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('fries', 'N'), ('!', '.')]
 (N try/N (NP the/DET fries/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'fries']
+ 	about: ['fries']
 	(A food concept!)
-U
+P
 +++++++++
 [('")', 'N'), ('that', 'P'), ("'", "''"), ('s', 'N'), ('when', 'WH'), ('i', 'PRO'), ('knew', 'V'), ('we', 'PRO'), ('were', 'VD'), ('onto', 'P'), ('something', 'N'), ('good', 'N')]
 (N ")/N):
@@ -12983,11 +12989,11 @@ P ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('nachos', 'N'), ('.', '.')]
 (N try/N (NP the/DET nachos/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'nachos']
+ 	about: ['nachos']
 	(A food concept!)
-U
+P
 +++++++++
 [('you', 'PRO'), ('wont', 'VD'), ('be', 'V'), ('disappointed', 'VN'), ('.', '.')]
 (N you/PRO):
@@ -12998,7 +13004,7 @@ wont --- has negative sentiment of 0.75
 disappointed --- has negative sentiment of 0.5
 N
 +++++++++
-P ---> N
+P ---> U
 ~~~~~~~~~~~~
 [('tuesday', 'N'), ('night', 'VD'), ('trivia', 'N'), ('starts', 'N'), ('at', 'P'), ('8pm', 'NUM'), ('!', '.')]
 (N tuesday/N):
@@ -13297,9 +13303,9 @@ U ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('to', 'TO'), ('be', 'V'), ('seated', 'VN'), ('in', 'P'), ('the', 'DET'), ('back', 'N'), ('garden', 'N'), ('area', 'N'), ('with', 'P'), ('a', 'DET'), ('big', 'ADJ'), ('group', 'N'), ('for', 'P'), ('the', 'DET'), ('all', 'DET'), ('you', 'PRO'), ('can', 'MOD'), ('drink', 'V'), ('brunch', 'N'), ('.', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N (NP the/DET back/N garden/N area/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -13783,9 +13789,9 @@ N ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('burger', 'N'), ('with', 'P'), ('the', 'DET'), ('lot', 'N'), ('-', ':'), ('enjoying', 'VG'), ('one', 'NUM'), ('of', 'P'), ('my', 'PRO'), ('fave', 'N'), ('burgers', 'N'), ('in', 'P'), ('nyc', 'N'), ('for', 'P'), ('@', 'NUM'), ('idlehansbar', 'N'), ('staff', 'N'), ('holiday', 'N'), ('party', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET burger/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'burger']
+ 	about: ['burger']
 	(A food concept!)
 (N (NP the/DET lot/N -/:)):
 	has positive sentiment of 0
@@ -14091,6 +14097,7 @@ U ---> P
 	has positive sentiment of 0.75
 	has negative sentiment of 0
  	about: ['portions', 'anyone']
+eat --- has positive sentiment of 0.5
 P
 +++++++++
 [('appys', 'N'), ('were', 'VD'), ('delightful', 'ADJ'), ('.', '.')]
@@ -14354,10 +14361,10 @@ N
 	has negative sentiment of 0
  	about: ['forever']
 (N (NP so/ADV try/ADJ for/P a/DET reservation/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.75
 	has negative sentiment of 0
  	about: ['reservation']
-U
+P
 +++++++++
 [('parking', 'VG'), ('can', 'MOD'), ('be', 'V'), ('tough', 'ADJ'), ('too', 'ADV'), ('.', '.'), ('again', 'ADV'), (',', ','), ('though', 'P'), ('.', '.')]
 (N tough/ADJ):
@@ -15488,12 +15495,12 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('bloody', 'N'), ('mary', 'N')]
 (N try/N (NP the/DET bloody/N mary/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.25
- 	about: ['try', 'mary']
-N
+ 	about: ['mary']
+P
 +++++++++
-P ---> N
+P ---> P
 ~~~~~~~~~~~~
 [('stacey', 'N'), ('!!', '``')]
 (N stacey/N):
@@ -15711,9 +15718,9 @@ P
 definitely --- has positive sentiment of 0.75
 must --- has positive sentiment of 0.625
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 P
 +++++++++
 P ---> P
@@ -15763,9 +15770,9 @@ P ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('chicken', 'N'), ('marsala', 'N'), ('-', ':'), ('simply', 'ADV'), ('too', 'ADV'), ('much', 'ADV'), ('!', '.')]
 (N try/N (NP the/DET chicken/N marsala/N -/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'chicken', 'marsala']
+ 	about: ['chicken', 'marsala']
 	(A food concept!)
 simply --- has positive sentiment of 0.75
 much --- has positive sentiment of 0.5
@@ -15815,9 +15822,9 @@ U ---> U
 	has negative sentiment of 0
  	about: ['go']
 (N eat/N supper/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['eat', 'supper']
+ 	about: ['supper']
 	(A food concept!)
 (N (NP they/PRO have/V the/DET best/ADJ salad/N)):
 	has positive sentiment of 0.75
@@ -16710,8 +16717,8 @@ U ---> U
  	about: []
 (N (NP not/ADV like/V anything/N broadway/N ../: try/N it/PRO)):
 	has positive sentiment of 0
-	has negative sentiment of 0.75
- 	about: ['anything', 'broadway', 'try']
+	has negative sentiment of 0.625
+ 	about: ['anything', 'broadway']
 (N (NP open/ADJ up/PRO your/PRO mind/N you/PRO)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -17885,9 +17892,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('sausage', 'N'), (',', ','), ('egg', 'N'), ('and', 'CNJ'), ('cheese', 'ADJ'), ('sandwich', 'N'), ('-', ':'), ('love', 'N'), ('it', 'PRO'), ('!', '.')]
 (N try/N (NP the/DET sausage/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'sausage']
+ 	about: ['sausage']
 	(A food concept!)
 (N egg/N):
 	has positive sentiment of 0
@@ -18093,11 +18100,11 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('apple', 'N'), ('fritter', 'N'), ('..', ':')]
 (N try/N apple/N fritter/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'apple', 'fritter']
+ 	about: ['apple', 'fritter']
 	(A food concept!)
-U
+P
 +++++++++
 [('i', 'PRO'), ('like', 'V'), ('it', 'PRO'), ('..', ':'), ('sweet', 'ADJ'), ('enough', 'ADV'), ('and', 'CNJ'), ('filling', 'VG'), ('for', 'P'), ('a', 'DET'), ('quick', 'ADJ'), ('bite', 'N'), ('and', 'CNJ'), ('studying', 'VG'), ('for', 'P'), ('extra', 'ADJ'), ('2', 'NUM'), ('hours', 'N'), ('..', ':')]
 (N (NP i/PRO like/V it/PRO ../: sweet/ADJ)):
@@ -18888,6 +18895,7 @@ P ---> P
 	has positive sentiment of 0.5625
 	has negative sentiment of 0
  	about: ['place']
+eat --- has positive sentiment of 0.5
 (N times/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -19283,6 +19291,7 @@ P ---> P
 ~~~~~~~~~~~~
 [('must', 'MOD'), ('try', 'V'), ('the', 'DET'), ('pork', 'N'), ('belly', 'ADV'), (',', ','), ('simply', 'ADV'), ('amazing', 'VG'), ('!', '.')]
 must --- has positive sentiment of 0.625
+try --- has positive sentiment of 0.5
 (N (NP the/DET pork/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -19570,17 +19579,17 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('a', 'DET'), ('tiger', 'N'), ('beer', 'N'), ("'", "''"), ('tallboy', 'N'), ("'!", '.')]
 (N try/N (NP a/DET tiger/N beer/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'tiger', 'beer']
+ 	about: ['tiger', 'beer']
 	(A food concept!)
 (N tallboy/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['tallboy']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('great', 'ADJ'), ('place', 'N'), ('//', ':'), ('very', 'ADV'), ('chill', 'ADV'), ('//', ':'), ('great', 'ADJ'), ('drinks', 'N'), ('...', ':'), ('start', 'N'), ('with', 'P'), ('a', 'DET'), ('yardbird', 'ADJ'), ('.', '.')]
 (N
@@ -19636,9 +19645,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('senor', 'N'), ('buck', 'N'), ('-', ':'), ('delicious', 'ADJ'), ('drink', 'N'), ('with', 'P'), ('help', 'N'), ('from', 'P'), ('ninth', 'ADJ'), ('street', 'N'), ('espreso', 'ADV'), (',', ','), ('mmm', 'N'), ('.', '.')]
 (N try/N (NP the/DET senor/N buck/N -/: delicious/ADJ drink/N)):
-	has positive sentiment of 0.75
+	has positive sentiment of 0.625
 	has negative sentiment of 0
- 	about: ['try', 'senor', 'buck', 'drink']
+ 	about: ['senor', 'buck', 'drink']
 	(A food concept!)
 (N help/N):
 	has positive sentiment of 0.5
@@ -20206,13 +20215,13 @@ U ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('bubble', 'ADJ'), ('tea', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET bubble/ADJ tea/N (/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'tea']
+ 	about: ['tea']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('add', 'N'), ('babo', 'VD'), ('on', 'P'), ('facebook', 'N'), ('and', 'CNJ'), ('ask', 'N'), ('to', 'TO'), ('be', 'V'), ('added', 'VN'), ('to', 'TO'), ('the', 'DET'), ('group', 'N'), ('to', 'TO'), ('get', 'V'), ('notifications', 'N'), ('for', 'P'), ('special', 'ADJ'), ('promotions', 'N'), ('and', 'CNJ'), ('be', 'V'), ('entitled', 'VN'), ('to', 'TO'), ('a', 'DET'), ('free', 'ADJ'), ('drink', 'N'), ('of', 'P'), ('your', 'PRO'), ('choice', 'N'), ('on', 'P'), ('your', 'PRO'), ('birthday', 'N'), ('!', '.')]
 (N add/N):
@@ -20544,22 +20553,22 @@ P
 +++++++++
 [('try', 'N'), ('3', 'NUM'), ('for', 'P'), ('free', 'ADJ'), ('!', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N free/ADJ):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
-U
+P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('tea', 'N'), ('/', ':'), ('coffee', 'N'), ('bubble', 'ADJ'), ('tea', 'N'), ('with', 'P'), ('the', 'DET'), ('tapioca', 'N'), ('balls', 'N'), (',', ','), ('very', 'ADV'), ('refreshing', 'VG'), ('.', '.')]
 (N try/N (NP the/DET tea/N //: coffee/N bubble/ADJ tea/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'tea', 'coffee', 'tea']
+ 	about: ['tea', 'coffee', 'tea']
 	(A food concept!)
 (N (NP the/DET tapioca/N balls/N)):
 	has positive sentiment of 0
@@ -20598,10 +20607,10 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('their', 'PRO'), ('gelato', 'N'), ('!', '.')]
 (N try/N (NP their/PRO gelato/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'gelato']
-U
+ 	about: ['gelato']
+P
 +++++++++
 [('it', 'PRO'), ("'", 'U'), ('s', 'N'), ('delicious', 'ADJ'), ('.', '.')]
 (N (NP it/PRO '/U s/N delicious/ADJ)):
@@ -20636,7 +20645,7 @@ P ---> P
 ~~~~~~~~~~~~
 [('you', 'PRO'), ('have', 'V'), ('to', 'TO'), ('try', 'V'), ('the', 'DET'), ('dragonfly', 'N'), ('blend', 'N'), (',', ','), ('its', 'PRO'), ('the', 'DET'), ('best', 'ADJ')]
 (N (NP you/PRO have/V to/TO try/V the/DET dragonfly/N blend/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: ['dragonfly', 'blend']
 (N (NP its/PRO the/DET best/ADJ)):
@@ -20815,9 +20824,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('summmer', 'N'), ('buzz', 'N'), ('and', 'CNJ'), ('nitro', 'N'), ('boom', 'N'), ('stout', 'P'), ('...', ':'), ('2', 'NUM'), ('great', 'ADJ'), ('beers', 'N'), ('!', '.')]
 (N try/N summmer/N buzz/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.125
- 	about: ['try', 'summmer']
+ 	about: ['summmer']
 (N nitro/N boom/N):
 	has positive sentiment of 0.375
 	has negative sentiment of 0
@@ -20860,16 +20869,16 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('streetlight', 'N'), ('beer', 'N'), ('or', 'CNJ'), ('blueberry', 'N'), ('ale', 'N'), ('.', '.')]
 (N try/N (NP the/DET streetlight/N beer/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'streetlight', 'beer']
+ 	about: ['streetlight', 'beer']
 	(A food concept!)
 (N blueberry/N ale/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['blueberry', 'ale']
 	(A food concept!)
-U
+P
 +++++++++
 [('decent', 'N'), ('music', 'N'), ('.', '.')]
 (N decent/N music/N):
@@ -20965,11 +20974,11 @@ U ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('oysters', 'N'), ('!', '.')]
 (N try/N (NP the/DET oysters/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'oysters']
+ 	about: ['oysters']
 	(A food concept!)
-U
+P
 +++++++++
 [('!', 'N')]
 (N !/N):
@@ -20978,15 +20987,15 @@ U
  	about: ['!']
 U
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('oysters', 'N'), ('!!', '.')]
 (N try/N (NP the/DET oysters/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'oysters']
+ 	about: ['oysters']
 	(A food concept!)
-U
+P
 +++++++++
 [('!', 'N')]
 (N !/N):
@@ -20995,13 +21004,13 @@ U
  	about: ['!']
 U
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('main', 'ADJ'), ('st', 'N'), ('coffee', 'N'), ('porter', 'N'), ('.', '.')]
 (N try/N (NP the/DET main/ADJ st/N coffee/N porter/N)):
-	has positive sentiment of 0.25
+	has positive sentiment of 0.375
 	has negative sentiment of 0
- 	about: ['try', 'st', 'coffee', 'porter']
+ 	about: ['st', 'coffee', 'porter']
 	(A food concept!)
 P
 +++++++++
@@ -21111,9 +21120,9 @@ U ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('broiled', 'VN'), ('mahi', 'N'), ('mahi', 'N'), ('on', 'P'), ('rye', 'N'), ('toast', 'N'), ('with', 'P'), ('remoulade', 'N'), ('sauce', 'N'), ('.', '.')]
 (N try/N (NP the/DET broiled/VN mahi/N mahi/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'mahi', 'mahi']
+ 	about: ['mahi', 'mahi']
 (N rye/N toast/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -21124,7 +21133,7 @@ U ---> U
 	has negative sentiment of 0
  	about: ['remoulade', 'sauce']
 	(A food concept!)
-U
+P
 +++++++++
 [('it', 'PRO'), ('is', 'V'), ('excellent', 'ADJ'), ('.', '.')]
 (N (NP it/PRO is/V excellent/ADJ)):
@@ -21137,7 +21146,7 @@ P ---> P
 ~~~~~~~~~~~~
 [('definitely', 'ADV'), ('try', 'V'), ('the', 'DET'), ('hurricane', 'N'), ('kitty', 'N'), ('with', 'P'), ('the', 'DET'), ('philly', 'ADV'), ('pizza', 'N'), ('.', '.')]
 (N (NP definitely/ADV try/V the/DET hurricane/N kitty/N)):
-	has positive sentiment of 0.75
+	has positive sentiment of 0.625
 	has negative sentiment of 0
  	about: ['hurricane', 'kitty']
 (N (NP the/DET philly/ADV pizza/N)):
@@ -21209,12 +21218,12 @@ U ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('double', 'ADJ'), ('vision', 'N'), ('belgian', 'N'), ('.', '.')]
 (N try/N (NP the/DET double/ADJ vision/N belgian/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'vision', 'belgian']
-U
+ 	about: ['vision', 'belgian']
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('a', 'DET'), ('pint', 'N'), ('of', 'P'), ('stout', 'N'), ('and', 'CNJ'), ('a', 'DET'), ('bowl', 'N'), ('...', ':'), ('of', 'P'), ('chili', 'N')]
 (N (NP a/DET pint/N)):
@@ -21240,22 +21249,22 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('decent', 'N'), ('music', 'N'), ('nights', 'N')]
 (N try/N (NP the/DET decent/N music/N nights/N)):
-	has positive sentiment of 0.625
+	has positive sentiment of 0.5625
 	has negative sentiment of 0
- 	about: ['try', 'music', 'nights']
+ 	about: ['music', 'nights']
 P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('habenero', 'N'), ('bbq', 'N'), ('chicken', 'N'), ('wings', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET habenero/N bbq/N chicken/N wings/N (/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'habenero', 'bbq', 'chicken', 'wings']
+ 	about: ['habenero', 'bbq', 'chicken', 'wings']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('have', 'V'), ('a', 'DET'), ('great', 'ADJ'), ('pumpkin', 'N')]
 (N (NP a/DET great/ADJ pumpkin/N)):
@@ -22492,9 +22501,9 @@ P
 (N
   (NP great/ADJ for/P entertaining/ADJ (/N try/N)
   (NP the/DET roaring/N forties/N blue/ADJ)):
-	has positive sentiment of 0.666666666667
+	has positive sentiment of 0.625
 	has negative sentiment of 0
- 	about: ['(', 'try', 'forties']
+ 	about: ['(', 'forties']
 (N (NP they/PRO have/V it/PRO )./:)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -23041,9 +23050,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('empanadas', 'N'), ('and', 'CNJ'), ('a', 'DET'), ('pasta', 'N'), ('salad', 'N'), ('for', 'P'), ('a', 'DET'), ('stress', 'N'), ('-', ':'), ('free', 'ADJ'), ('tasty', 'N'), ('dinner', 'N'), ('.', '.')]
 (N try/N (NP the/DET empanadas/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'empanadas']
+ 	about: ['empanadas']
 (N (NP a/DET pasta/N salad/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -23203,6 +23212,7 @@ P
 	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: ['place']
+eat --- has positive sentiment of 0.5
 P
 +++++++++
 P ---> P
@@ -23239,6 +23249,7 @@ N ---> N
 	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: []
+eat --- has positive sentiment of 0.5
 fun --- has positive sentiment of 0.375
 P
 +++++++++
@@ -23308,13 +23319,13 @@ N ---> N
 ~~~~~~~~~~~~
 [('try', 'N'), ('to', 'TO'), ('avoid', 'V')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 avoid --- has negative sentiment of 0.625
-N
+U
 +++++++++
-N ---> N
+N ---> U
 ~~~~~~~~~~~~
 [('jimmmy', 'PRO'), ('buffet', 'N'), (',', ','), ('good', 'ADJ'), ('food', 'N'), (',', ','), ('good', 'ADJ'), ('friends', 'N'), ('...', ':'), ('cant', 'ADJ'), ('beat', 'N'), ('it', 'PRO'), ('!', '.')]
 (N (NP jimmmy/PRO buffet/N)):
@@ -24058,8 +24069,8 @@ U ---> P
   (NP the/DET oatmeal/N)
   (NP not/ADV only/ADV is/V it/PRO healthy/ADJ it/PRO good/ADJ)):
 	has positive sentiment of 0
-	has negative sentiment of 0.625
- 	about: ['try', 'oatmeal']
+	has negative sentiment of 0.59375
+ 	about: ['oatmeal']
 	(A food concept!)
 N
 +++++++++
@@ -24375,6 +24386,7 @@ N ---> N
 	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: []
+eat --- has positive sentiment of 0.5
 P
 +++++++++
 [('the', 'DET'), ('have', 'V'), ('tv', 'N'), ("'", "''"), ('s', 'N'), ('in', 'P'), ('the', 'DET'), ('back', 'N')]
@@ -24920,17 +24932,17 @@ U ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('lobster', 'N'), ('rolls', 'N'), ('appetizer', 'N'), ('in', 'P'), ('the', 'DET'), ('rlounge', 'N'), ('.', '.')]
 (N try/N (NP the/DET lobster/N rolls/N appetizer/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'lobster', 'rolls', 'appetizer']
+ 	about: ['lobster', 'rolls', 'appetizer']
 	(A food concept!)
 (N (NP the/DET rlounge/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['rlounge']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('go', 'P'), ('to', 'TO'), ('the', 'DET'), ('r', 'N'), ('lounge', 'N'), ('and', 'CNJ'), ('have', 'V'), ('the', 'DET'), ('amazing', 'VG'), ('chips', 'N'), ('with', 'P'), ('green', 'ADJ'), ('onion', 'N'), ('dip', 'N'), ('for', 'P'), ('$', '$'), ('0', 'U'), ('.', '.'), ('99', 'NUM'), ('!', '.')]
 (N (NP the/DET r/N lounge/N)):
@@ -26077,9 +26089,9 @@ N ---> N
 ~~~~~~~~~~~~
 [('try', 'N'), ('sapporo', 'N'), ('special', 'ADJ'), ('and', 'CNJ'), ('put', 'VD'), ('in', 'PRO'), ('an', 'DET'), ('oil', 'N'), ('that', 'P'), ("'", "''"), ('s', 'N'), ('so', 'ADV'), ('good', 'ADJ'), ('.', '.')]
 (N try/N sapporo/N special/ADJ):
-	has positive sentiment of 0.75
+	has positive sentiment of 0.625
 	has negative sentiment of 0
- 	about: ['try', 'sapporo']
+ 	about: ['sapporo']
 (N (NP in/PRO an/DET oil/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -26155,15 +26167,15 @@ N ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('sapporo', 'N'), ('miso', 'N'), ('ramen', 'N'), ('-', ':'), ('ramen', 'N'), ('craving', 'VG'), ('when', 'WH'), ('it', 'PRO'), ('gets', 'V'), ('cold', 'ADJ'), ('.', '.')]
 (N try/N (NP the/DET sapporo/N miso/N ramen/N -/: ramen/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'sapporo', 'miso', 'ramen', 'ramen']
+ 	about: ['sapporo', 'miso', 'ramen', 'ramen']
 	(A food concept!)
 (N (NP it/PRO gets/V cold/ADJ)):
 	has positive sentiment of 0
 	has negative sentiment of 0.125
  	about: []
-N
+P
 +++++++++
 [('(', 'N'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N (/N):
@@ -26172,19 +26184,19 @@ N
  	about: ['(']
 U
 +++++++++
-P ---> N
+P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('spicy', 'N'), ('kimchee', 'N'), ('miso', 'ADV'), ('ramen', 'VN'), ('(', 'U'), ('via', 'P'), ('@', 'NP'), ('foodspotting', 'N'), (')', ':')]
 (N
   try/N
   (NP the/DET spicy/N kimchee/N)
   (NP miso/ADV ramen/VN (/U via/P @/NP foodspotting/N )/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'spicy', 'kimchee', '@', 'foodspotting']
-U
+ 	about: ['spicy', 'kimchee', '@', 'foodspotting']
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('the', 'DET'), ('curry', 'N'), ('seems', 'V'), ('that', 'P'), ('it', 'PRO'), ('has', 'V'), ('nothing', 'N'), ('inside', 'N'), (',', ','), ('but', 'CNJ'), ('it', 'PRO'), ("'", "''"), ('s', 'V'), ('beef', 'N'), ('and', 'CNJ'), ('vegetables', 'N'), ('all', 'DET'), ('melted', 'VN'), ('.', '.')]
 (N (NP the/DET curry/N)):
@@ -26226,9 +26238,9 @@ P ---> U
   try/N
   (NP the/DET pork/N katsudon/N -/: love/N)
   (NP this/DET place/N)):
-	has positive sentiment of 0.75
+	has positive sentiment of 0.625
 	has negative sentiment of 0
- 	about: ['try', 'pork', 'katsudon', 'place']
+ 	about: ['pork', 'katsudon', 'place']
 	(A food concept!)
 P
 +++++++++
@@ -26243,9 +26255,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('tsuke', 'N'), ('men', 'N'), ('with', 'P'), ('dipping', 'VG'), ('sauce', 'N'), ('on', 'P'), ('a', 'DET'), ('spring', 'N'), ('day', 'N'), ('.', '.')]
 (N try/N (NP the/DET tsuke/N men/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'tsuke', 'men']
+ 	about: ['tsuke', 'men']
 (N sauce/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -26255,7 +26267,7 @@ P ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['spring', 'day']
-U
+P
 +++++++++
 [('the', 'DET'), ('temperature', 'N'), ('is', 'V'), ('just', 'ADV'), ('right', 'ADV'), ('and', 'CNJ'), ('they', 'PRO'), ('give', 'V'), ('you', 'PRO'), ('a', 'DET'), ('pot', 'N'), ('of', 'P'), ('hot', 'ADJ'), ('broth', 'N'), ('to', 'TO'), ('wash', 'V'), ('it', 'PRO'), ('down', 'P'), ('at', 'P'), ('the', 'DET'), ('end', 'N'), ('.', '.')]
 (N (NP the/DET temperature/N)):
@@ -26486,7 +26498,7 @@ P
     as/P
     a/DET
     sandwich/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.75
  	about: ['sandwich']
 	(A food concept!)
@@ -27161,9 +27173,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('deadly', 'ADV'), (',', ','), ('but', 'CNJ'), ('delicious', 'ADJ'), (',', ','), ('caipirinhas', 'V'), ('.', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 deadly --- has negative sentiment of 0.25
 (N delicious/ADJ):
 	has positive sentiment of 0.75
@@ -27320,7 +27332,7 @@ P ---> P
 ~~~~~~~~~~~~
 [('you', 'PRO'), ('have', 'V'), ('to', 'TO'), ('try', 'V'), ('the', 'DET'), ('strawberry', 'N'), ('martini', 'N'), (',', ','), ('trust', 'N'), ('me', 'PRO'), ('!', '.')]
 (N (NP you/PRO have/V to/TO try/V the/DET strawberry/N martini/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: ['strawberry', 'martini']
 	(A food concept!)
@@ -27418,6 +27430,7 @@ P ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0.75
  	about: ['wait']
+try --- has positive sentiment of 0.5
 (N brews/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -27448,7 +27461,7 @@ P ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['brooklyn']
-N
+U
 +++++++++
 [('http', 'N'), ('://', '``'), ('ow', 'N'), ('.', '.'), ('ly', 'ADV'), ('/', ':'), ('dmqn5', 'NP')]
 (N http/N):
@@ -27465,7 +27478,7 @@ N
  	about: ['dmqn5']
 U
 +++++++++
-P ---> N
+P ---> U
 ~~~~~~~~~~~~
 [('jess', 'N'), ('is', 'V'), ('the', 'DET'), ('best', 'ADJ'), ('bartender', 'N'), ('ever', 'ADV')]
 (N jess/N):
@@ -27482,11 +27495,11 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('all', 'DET'), ('of', 'P'), ('the', 'DET'), ('beers', 'N'), ('.', '.')]
 (N try/N (NP all/DET of/P the/DET beers/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'beers']
+ 	about: ['beers']
 	(A food concept!)
-U
+P
 +++++++++
 [('they', 'PRO'), ('are', 'V'), ('great', 'ADJ'), ('.', '.')]
 (N (NP they/PRO are/V great/ADJ)):
@@ -27584,11 +27597,11 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('sour', 'N'), ('cherry', 'N'), ('stout', 'P'), ('.', '.')]
 (N try/N (NP the/DET sour/N cherry/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.375
- 	about: ['try', 'cherry']
+ 	about: ['cherry']
 	(A food concept!)
-N
+U
 +++++++++
 [('absolutely', 'ADV'), ('fabulous', 'ADJ'), ('!', '.')]
 (N (NP absolutely/ADV fabulous/ADJ)):
@@ -27597,7 +27610,7 @@ N
  	about: []
 P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('they', 'PRO'), ('now', 'ADV'), ('charge', 'V'), ('for', 'P'), ('samples', 'N'), (':(', ':')]
 (N (NP they/PRO now/ADV charge/V for/P samples/N :(/:)):
@@ -27648,9 +27661,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('everything', 'N'), (',', ','), ('you', 'PRO'), ('wont', 'V'), ('be', 'V'), ('sorry', 'ADJ'), ('.', '.')]
 (N try/N everything/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'everything']
+ 	about: ['everything']
 (N (NP you/PRO wont/V be/V sorry/ADJ)):
 	has positive sentiment of 0.625
 	has negative sentiment of 0
@@ -27860,7 +27873,7 @@ P ---> P
 (N (NP i/PRO '/V d/ADJ say/N try/N) (NP a/DET certain/ADJ beer/N)):
 	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['say', 'try', 'beer']
+ 	about: ['say', 'beer']
 	(A food concept!)
 (N it/PRO):
 	has positive sentiment of 0
@@ -27874,12 +27887,12 @@ U
 +++++++++
 [('you', 'PRO'), ('seriously', 'ADV'), ('have', 'V'), ('to', 'TO'), ('try', 'V'), ('them', 'PRO'), ('all', 'DET'), ('.', '.')]
 (N (NP you/PRO seriously/ADV have/V to/TO try/V them/PRO)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.25
  	about: []
-N
+P
 +++++++++
-P ---> N
+P ---> P
 ~~~~~~~~~~~~
 [('blueberrry', 'N'), ('beer', 'N'), ('!!!', '.')]
 (N blueberrry/N beer/N):
@@ -27977,10 +27990,10 @@ U
 +++++++++
 [('try', 'N'), ('it', 'PRO'), ('.', '.')]
 (N try/N it/PRO):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
-U
+ 	about: []
+P
 +++++++++
 [('its', 'PRO'), ('good', 'ADJ'), ('!', '.')]
 (N (NP its/PRO good/ADJ)):
@@ -27989,10 +28002,11 @@ U
  	about: []
 P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('excited', 'VD'), ('to', 'TO'), ('try', 'V'), ('sludge', 'N'), ('...', ':'), ('its', 'PRO'), ('flying', 'N'), ('off', 'P'), ('the', 'DET'), ('shelves', 'N'), ('!', '.')]
 excited --- has positive sentiment of 0.5
+try --- has positive sentiment of 0.5
 (N sludge/N):
 	has positive sentiment of 0
 	has negative sentiment of 0.25
@@ -28280,9 +28294,9 @@ P ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('full', 'ADJ'), ('rack', 'N'), ('of', 'P'), ('ribs', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET full/ADJ rack/N)):
-	has positive sentiment of 0.375
+	has positive sentiment of 0.4375
 	has negative sentiment of 0
- 	about: ['try', 'rack']
+ 	about: ['rack']
 	(A food concept!)
 (N ribs/N):
 	has positive sentiment of 0
@@ -28652,9 +28666,9 @@ P ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('wings', 'N'), (',', ','), ('the', 'DET'), ('best', 'ADJ'), ('ive', 'ADJ'), ('known', 'N')]
 (N try/N (NP the/DET wings/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'wings']
+ 	about: ['wings']
 (N (NP the/DET best/ADJ ive/ADJ known/N)):
 	has positive sentiment of 0.625
 	has negative sentiment of 0
@@ -28867,16 +28881,16 @@ P ---> P
  	about: []
 dont --- has negative sentiment of 0.75
 (N try/N (NP them/PRO you/PRO)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N up/PRO):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
-N
+U
 +++++++++
-P ---> N
+P ---> U
 ~~~~~~~~~~~~
 [('the', 'DET'), ('wings', 'N'), ('are', 'V'), ('crazy', 'ADJ'), ('!!!', 'N')]
 (N (NP the/DET wings/N)):
@@ -28955,6 +28969,7 @@ U ---> N
 	has positive sentiment of 0.875
 	has negative sentiment of 0
  	about: ['place']
+eat --- has positive sentiment of 0.5
 (N summmertime/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -30510,16 +30525,16 @@ P ---> U
 ~~~~~~~~~~~~
 [('as', 'P'), ('mayor', 'N'), ('i', 'PRO'), ('say', 'V'), (',', ','), ('"', 'NP'), ('try', 'N'), ('the', 'DET'), ('apple', 'N'), ("'", 'U'), ('n', 'N'), ('greens', 'N'), ('!', '.')]
 (N mayor/N (NP i/PRO say/V ,/, "/NP try/N) (NP the/DET apple/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['mayor', '"', 'try', 'apple']
+ 	about: ['mayor', '"', 'apple']
 	(A food concept!)
 (N n/N greens/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['n', 'greens']
 	(A food concept!)
-U
+P
 +++++++++
 [('get', 'N'), ('your', 'PRO'), ('fruits', 'N'), ('and', 'CNJ'), ('veggies', 'N'), ('on', 'P'), ('!', '.')]
 (N get/N (NP your/PRO fruits/N)):
@@ -30540,7 +30555,7 @@ U
  	about: ['"']
 U
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('peach', 'N'), ('pleasure', 'N')]
 (N peach/N pleasure/N):
@@ -30721,13 +30736,13 @@ P ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('banana', 'N'), ('berry', 'N')]
 (N try/N (NP the/DET banana/N berry/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'banana', 'berry']
+ 	about: ['banana', 'berry']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('mega', 'N'), ('mango', 'VD'), ('wins', 'N'), ('.', '.')]
 (N mega/N):
@@ -31180,12 +31195,12 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('a', 'DET'), ('razorback', 'N')]
 (N try/N (NP a/DET razorback/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'razorback']
-U
+ 	about: ['razorback']
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('2', 'L'), ('dollar', 'N'), ('pbr', 'N'), ("'", "''"), ('s', 'N'), ('!!', '.')]
 (N dollar/N pbr/N):
@@ -31404,13 +31419,13 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('sushi', 'N'), ('rolls', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET sushi/N rolls/N (/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'sushi', 'rolls']
+ 	about: ['sushi', 'rolls']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('the', 'DET'), ('tuna', 'N'), ('tacos', 'N'), ('are', 'V'), ('freaking', 'VG'), ('amazing', 'VG'), ('.', '.')]
 (N (NP the/DET tuna/N tacos/N)):
@@ -31643,10 +31658,10 @@ P ---> P
  	about: ['s', 'menu']
 	(A food concept!)
 (N try/N (NP their/PRO creamy/N nirvana/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.625
- 	about: ['try', 'creamy']
-N
+ 	about: ['creamy']
+U
 +++++++++
 [('yum', 'N'), ('!', '``')]
 (N yum/N):
@@ -31655,7 +31670,7 @@ N
  	about: []
 P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('manager', 'N'), ('the', 'DET'), ('@', 'N'), ('komegashi', 'N'), ('too', 'ADV'), ('-', ':'), ('newport', 'N'), ('made', 'VD'), ('a', 'DET'), ('stink', 'N'), ('over', 'P'), ('free', 'ADJ'), ('japanese', 'ADJ'), ('chicken', 'N'), ('wings', 'N'), ('to', 'TO'), ('-', ':'), ('go', 'V'), ('w', 'N'), ('/', ':'), ('1st', 'NUM'), ('#', '#'), ('foursquare', 'N'), ('check', 'N'), ('-', ':'), ('in', 'P'), ('($', '$'), ('6', 'NUM'), ('.', '.'), ('50', 'NUM'), ('value', 'N'), (')...', ':'), ('bad', 'ADJ'), ('customer', 'N'), ('service', 'N'), ('!!', '.')]
 (N manager/N (NP the/DET @/N komegashi/N) (NP too/ADV -/: newport/N)):
@@ -31718,9 +31733,9 @@ U ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('banana', 'N'), ('froster', 'N'), ('-', ':'), ('yum', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET banana/N froster/N -/: yum/N (/:)):
-	has positive sentiment of 0.8
+	has positive sentiment of 0.65
 	has negative sentiment of 0
- 	about: ['try', 'banana', 'froster']
+ 	about: ['banana', 'froster']
 	(A food concept!)
 P
 +++++++++
@@ -31728,9 +31743,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('oyster', 'N'), ('shooters', 'N'), ('-', ':'), ('yum', 'N'), ('wish', 'N'), ('there', 'EX'), ('was', 'VD'), ('more', 'ADJ'), ('(', 'U'), ('via', 'P'), ('@', 'NP'), ('foodspotting', 'N'), (')', ':')]
 (N try/N (NP the/DET oyster/N shooters/N -/: yum/N wish/N)):
-	has positive sentiment of 0.4625
+	has positive sentiment of 0.475
 	has negative sentiment of 0
- 	about: ['try', 'oyster', 'shooters']
+ 	about: ['oyster', 'shooters']
 	(A food concept!)
 (N (NP more/ADJ (/U via/P @/NP foodspotting/N )/:)):
 	has positive sentiment of 0.75
@@ -31771,16 +31786,16 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('godzilla', 'N'), ('rolls', 'N'), ('and', 'CNJ'), ('fried', 'VD'), ('green', 'ADJ'), ('tea', 'N'), ('ice', 'N'), ('cream', 'N'), ('.', '.')]
 (N try/N (NP the/DET godzilla/N rolls/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'godzilla', 'rolls']
+ 	about: ['godzilla', 'rolls']
 	(A food concept!)
 (N (NP green/ADJ tea/N ice/N cream/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['tea', 'ice', 'cream']
 	(A food concept!)
-U
+P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
@@ -32001,13 +32016,13 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('lobster', 'N'), ('bisque', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET lobster/N bisque/N (/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'lobster', 'bisque']
+ 	about: ['lobster', 'bisque']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('ask', 'N'), ('your', 'PRO'), ('server', 'N'), ('about', 'P'), ('our', 'PRO'), ('skuna', 'N'), ('bay', 'N'), ('salmon', 'N'), ('specials', 'N'), ('throughout', 'P'), ('october', 'N'), (',', ','), ('for', 'P'), ('national', 'ADJ'), ('seafood', 'N'), ('month', 'N'), (',', ','), ('plus', 'CNJ'), ('$', '$'), ('1', 'NUM'), ('.', '.'), ('50', 'NUM'), ('oysters', 'N'), ('at', 'P'), ('the', 'DET'), ('bar', 'N'), ('every', 'DET'), ('night', 'N'), ('after', 'P'), ('9', 'NUM'), (':', ':'), ('30', 'NUM'), ('.', '.')]
 (N ask/N (NP your/PRO server/N)):
@@ -32230,9 +32245,9 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('hamachi', 'N'), ('maki', 'N'), ('-', ':'), ('watermelon', 'N'), (',', ','), ('arugula', 'N'), (',', ','), ('jalape\xc3', 'NP'), ('\xb1', 'NP'), ('o', 'N'), ('and', 'CNJ'), ('hamachi', 'N'), ('.', '.')]
 (N try/N (NP the/DET hamachi/N maki/N -/: watermelon/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'hamachi', 'maki', 'watermelon']
+ 	about: ['hamachi', 'maki', 'watermelon']
 	(A food concept!)
 (N arugula/N):
 	has positive sentiment of 0
@@ -32246,7 +32261,7 @@ P ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['hamachi']
-U
+P
 +++++++++
 [('amazing', 'VG'), ('combination', 'N'), ('.', '.')]
 amazing --- has positive sentiment of 0.875
@@ -32375,9 +32390,9 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('halibut', 'N'), (',', ','), ('very', 'ADV'), ('nice', 'ADJ'), ('dish', 'ADJ'), ('.', '.')]
 (N try/N (NP the/DET halibut/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'halibut']
+ 	about: ['halibut']
 	(A food concept!)
 (N (NP very/ADV nice/ADJ dish/ADJ)):
 	has positive sentiment of 1.125
@@ -32619,11 +32634,11 @@ N
 (N
   t/N
   (NP too/ADV molten/ADV ,/, so/ADV try/ADJ another/DET dessert/N)):
-	has positive sentiment of 0
+	has positive sentiment of 1.0625
 	has negative sentiment of 0
  	about: ['t', 'dessert']
 	(A food concept!)
-U
+P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
@@ -32742,9 +32757,9 @@ P
 	has negative sentiment of 0
  	about: ['availability']
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N saturday/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -32759,9 +32774,9 @@ U ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('lobster', 'N'), ('bisque', 'N'), (',', ','), ('yellowtail', 'N'), ('shiso', 'ADV'), ('roll', 'N'), ('and', 'CNJ'), ('valrhona', 'N'), ('chocolate', 'N'), ('pot', 'N'), ('the', 'DET'), ('creme', 'N'), ('.', '.')]
 (N try/N (NP the/DET lobster/N bisque/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'lobster', 'bisque']
+ 	about: ['lobster', 'bisque']
 	(A food concept!)
 (N yellowtail/N (NP shiso/ADV roll/N)):
 	has positive sentiment of 0
@@ -32773,9 +32788,9 @@ U ---> P
 	has negative sentiment of 0
  	about: ['valrhona', 'chocolate', 'pot', 'creme']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('lobster', 'N'), ('cocktail', 'N'), (',', ','), ('spicy', 'N'), ('tuna', 'N'), ('and', 'CNJ'), ('maguro', 'N'), ('tuna', 'N'), ('sashimi', 'N'), ('are', 'V'), ('all', 'DET'), ('a', 'DET'), ('must', 'MOD'), ('order', 'N'), ('!!', '.')]
 (N lobster/N cocktail/N):
@@ -32978,7 +32993,7 @@ P ---> P
 	has negative sentiment of 0
  	about: []
 (N (NP yourself/PRO to/TO try/V roast/ADJ)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: []
 (N s/N):
@@ -33177,13 +33192,13 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('zzz', 'N'), ('tea', 'N'), (',', ','), ('iced', 'VD'), ('!', '.')]
 (N try/N (NP the/DET zzz/N tea/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'zzz', 'tea']
+ 	about: ['zzz', 'tea']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('congrats', 'N'), ('on', 'P'), ('your', 'PRO'), ('win', 'N'), ('for', 'P'), ('best', 'ADJ'), ('of', 'P'), ('long', 'ADV'), ('island', 'V'), ("'", "''"), ('s', 'N'), ('win', 'V'), ('for', 'P'), ('best', 'ADJ'), ('coffee', 'N'), ('and', 'CNJ'), ('best', 'ADJ'), ('coffee', 'N'), ('house', 'N'), ('for', 'P'), ('2012', 'NUM'), ('!!', 'NUM')]
 (N congrats/N):
@@ -34805,9 +34820,9 @@ P
 	has negative sentiment of 0
  	about: ['availability']
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N saturday/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -35181,9 +35196,9 @@ U ---> U
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('broiled', 'VN'), ('salmon', 'N'), ('-', ':'), ('wow', 'N'), ('!', '.')]
 (N try/N (NP the/DET broiled/VN salmon/N -/: wow/N)):
-	has positive sentiment of 0.825
+	has positive sentiment of 0.6625
 	has negative sentiment of 0
- 	about: ['try', 'salmon']
+ 	about: ['salmon']
 	(A food concept!)
 P
 +++++++++
@@ -35226,16 +35241,16 @@ P ---> P
     served/VN
     over/P
     vegetables/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'vegetables']
+ 	about: ['vegetables']
 	(A food concept!)
 (N rice/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['rice']
 	(A food concept!)
-U
+P
 +++++++++
 [('nice', 'N'), ('and', 'CNJ'), ('juicy', 'N'), ('with', 'P'), ('lots', 'N'), ('of', 'P'), ('flavor', 'N'), ('.', '.')]
 (N nice/N):
@@ -35267,13 +35282,13 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('manhattan', 'N'), ('clam', 'N'), ('chowder', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET manhattan/N clam/N chowder/N (/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'manhattan', 'clam', 'chowder']
+ 	about: ['manhattan', 'clam', 'chowder']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('the', 'DET'), ('duck', 'N'), ('was', 'VD'), ('awesome', 'VN'), ('!!', 'U')]
 (N (NP the/DET duck/N)):
@@ -35421,17 +35436,17 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('calamari', 'N'), ('app', 'N'), ('with', 'P'), ('the', 'DET'), ('baby', 'N'), ('bok', 'N'), ('choy', 'N'), ('!', '.')]
 (N try/N (NP the/DET calamari/N app/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'calamari', 'app']
+ 	about: ['calamari', 'app']
 	(A food concept!)
 (N (NP the/DET baby/N bok/N choy/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['baby', 'bok', 'choy']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('the', 'DET'), ('caesar', 'N'), ('salad', 'N'), ('is', 'V'), ('good', 'ADJ'), ('but', 'CNJ'), ('taste', 'ADJ'), ("'", "''"), ('s', 'N'), ('a', 'DET'), ('little', 'ADV'), ('like', 'P'), ('moth', 'DET'), ('balls', 'N')]
 (N (NP the/DET caesar/N salad/N)):
@@ -35473,11 +35488,11 @@ P
 +++++++++
 [('try', 'N'), ('the', 'DET'), ('seafood', 'N'), ('bisque', 'N'), ('.', '.')]
 (N try/N (NP the/DET seafood/N bisque/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'seafood', 'bisque']
+ 	about: ['seafood', 'bisque']
 	(A food concept!)
-U
+P
 +++++++++
 [('it', 'PRO'), ('has', 'V'), ('a', 'DET'), ('little', 'ADV'), ('bite', 'ADJ'), ('.', '.')]
 (N (NP it/PRO has/V a/DET little/ADV bite/ADJ)):
@@ -36236,9 +36251,9 @@ P
 +++++++++
 [('try', 'N'), ('to', 'TO'), ('get', 'V'), ('there', 'ADV'), ('early', 'ADJ'), ('for', 'P'), ('better', 'ADJ'), ('seats', 'N'), ('!', '.')]
 (N try/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 (N (NP there/ADV early/ADJ for/P better/ADJ seats/N)):
 	has positive sentiment of 0.75
 	has negative sentiment of 0
@@ -36862,13 +36877,13 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('tuna', 'N'), ('sushi', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET tuna/N sushi/N (/:)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'tuna', 'sushi']
+ 	about: ['tuna', 'sushi']
 	(A food concept!)
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('must', 'MOD'), ('have', 'V'), ('cheesecake', 'V'), ('!!!!!!!!!', '.')]
 must --- has positive sentiment of 0.625
@@ -37950,16 +37965,16 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('dark', 'N'), ('walnut', 'N'), ('waffle', 'N'), ('with', 'P'), ('a', 'DET'), ('spanish', 'ADJ'), ('latte', 'N'), ('.', '.')]
 (N try/N (NP the/DET dark/N walnut/N waffle/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'dark', 'walnut', 'waffle']
+ 	about: ['dark', 'walnut', 'waffle']
 	(A food concept!)
 (N (NP a/DET spanish/ADJ latte/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['latte']
 	(A food concept!)
-U
+P
 +++++++++
 [('amazing', 'VG'), ('.', '.')]
 amazing --- has positive sentiment of 0.875
@@ -39137,6 +39152,7 @@ P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
+eat --- has positive sentiment of 0.5
 (N anything/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -39232,7 +39248,8 @@ N
 +++++++++
 [('do', 'V'), ('not', 'ADV'), ('eat', 'V'), ('here', 'ADV'), ('!!!!!', '.')]
 not --- has negative sentiment of 0.625
-N
+eat --- has positive sentiment of 0.5
+U
 +++++++++
 [('!', 'N')]
 (N !/N):
@@ -40148,16 +40165,16 @@ U ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('the', 'DET'), ('andouille', 'N'), ('stuffed', 'VD'), ('berkshire', 'N'), ('porkloin', 'N'), ('(', ':'), ('via', 'P'), ('@', 'NUM'), ('foodspotting', 'VG'), (')', 'NUM')]
 (N try/N (NP the/DET andouille/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'andouille']
+ 	about: ['andouille']
 (N berkshire/N porkloin/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['berkshire', 'porkloin']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('everything', 'N'), ('they', 'PRO'), ('have', 'V'), ('to', 'TO'), ('offer', 'V'), ('is', 'V'), ('delicious', 'ADJ'), ('!', '.')]
 (N
@@ -40717,6 +40734,7 @@ P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
+try --- has positive sentiment of 0.5
 (N (NP the/DET peanut/N butter/N ones/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -40726,7 +40744,7 @@ P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['almond']
-U
+P
 +++++++++
 P ---> P
 ~~~~~~~~~~~~
@@ -40748,16 +40766,16 @@ U
 	has negative sentiment of 0
  	about: ['people']
 (N (NP also/ADV try/V to/TO cut/V you/PRO)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
  	about: []
 (N line/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['line']
-U
+P
 +++++++++
-N ---> U
+N ---> P
 ~~~~~~~~~~~~
 [('puedes', 'N'), ('crear', 'V'), ('miles', 'N'), ('de', 'P'), ('combinaciones', 'N'), ('de', 'P'), ('bolsitas', 'N'), ('de', 'P'), ('m', 'N'), ('&', 'CNJ'), ('m', 'N'), ('.', '.')]
 (N puedes/N):
@@ -40836,6 +40854,7 @@ U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
+try --- has positive sentiment of 0.5
 (N (NP a/DET little/ADV bit/N)):
 	has positive sentiment of 0.125
 	has negative sentiment of 0
@@ -40939,9 +40958,9 @@ U ---> U
 ~~~~~~~~~~~~
 [('eat', 'N'), ('all', 'DET'), ('the', 'DET'), ('green', 'ADJ'), ('m', 'N'), ('&', 'CNJ'), ('m', 'N'), ("'", "''"), ('s', 'N')]
 (N eat/N (NP all/DET the/DET green/ADJ m/N)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['eat', 'm']
+ 	about: ['m']
 (N m/N):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -40950,9 +40969,9 @@ U ---> U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['s']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('bathrooms', 'N'), ('on', 'P'), ('3rd', 'ADJ'), ('floor', 'N'), ('.', '.')]
 (N bathrooms/N):
@@ -41415,6 +41434,7 @@ U
 	has positive sentiment of 0
 	has negative sentiment of 0.75
  	about: ['mojito']
+try --- has positive sentiment of 0.5
 (N you/PRO):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -41432,7 +41452,7 @@ dont --- has negative sentiment of 0.75
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['silver']
-N
+U
 +++++++++
 [('"', 'N'), ('wtf', 'N'), ('?', '.')]
 (N "/N wtf/N):
@@ -41441,7 +41461,7 @@ N
  	about: ['"', 'wtf']
 U
 +++++++++
-N ---> N
+N ---> U
 ~~~~~~~~~~~~
 [('steak', 'N'), ('tacos', 'N'), ('tortilla', 'N'), ('soup', 'N'), ('burger', 'N'), ('all', 'DET'), ('good', 'ADJ'), ('!', '.')]
 (N steak/N tacos/N tortilla/N soup/N burger/N (NP all/DET good/ADJ)):
@@ -41577,10 +41597,10 @@ N
 [('drink', 'N'), ('here', 'ADV'), (',', ','), ('dont', 'N'), ('eat', 'N'), ('!', '.')]
 (N drink/N (NP here/ADV ,/, dont/N eat/N)):
 	has positive sentiment of 0
-	has negative sentiment of 0
- 	about: ['drink', 'eat']
+	has negative sentiment of 0.5
+ 	about: ['drink']
 	(A food concept!)
-U
+N
 +++++++++
 N ---> N
 ~~~~~~~~~~~~
@@ -42301,15 +42321,15 @@ P ---> P
 ~~~~~~~~~~~~
 [('try', 'N'), ('something', 'N'), ('off', 'P'), ('the', 'DET'), ('specials', 'N'), ('.', '.')]
 (N try/N something/N):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try', 'something']
+ 	about: ['something']
 (N (NP the/DET specials/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['specials']
 	(A food concept!)
-U
+P
 +++++++++
 [('they', 'PRO'), ('are', 'V'), ('always', 'ADV'), ('fabulous', 'ADJ'), ('.', '.')]
 (N (NP they/PRO are/V always/ADV fabulous/ADJ)):
@@ -42327,7 +42347,7 @@ P
 weekly --- has negative sentiment of 0.375
 N
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('wide', 'ADJ'), ('variety', 'N'), ('of', 'P'), ('lipsticks', 'N'), ('and', 'CNJ'), ('eyelashes', 'N'), ('...', ':'), ('and', 'CNJ'), ('affordable', 'ADJ'), ('!', '.')]
 (N (NP wide/ADJ variety/N)):
@@ -42674,20 +42694,21 @@ P
 +++++++++
 [('try', 'N'), ('it', 'PRO'), (',', ','), ('you', 'PRO'), ('wont', 'V'), ('be', 'V'), ('disappointed', 'VN'), ('!', '.')]
 (N try/N (NP it/PRO ,/, you/PRO)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0
- 	about: ['try']
+ 	about: []
 wont --- has negative sentiment of 0.75
 disappointed --- has negative sentiment of 0.5
-N
+U
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('omg', 'N'), ('i', 'PRO'), ('could', 'MOD'), ('eat', 'V'), ('a', 'DET'), ('tub', 'N'), ('of', 'P'), ('their', 'PRO'), ('pina', 'N'), ('colada', 'N'), ('!', '.')]
 (N omg/N i/PRO):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['omg']
+eat --- has positive sentiment of 0.5
 (N (NP a/DET tub/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
@@ -42696,9 +42717,9 @@ P ---> U
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['pina', 'colada']
-U
+P
 +++++++++
-P ---> U
+P ---> P
 ~~~~~~~~~~~~
 [('bubblegum', 'N'), ('water', 'N'), ('icey', 'N'), ('!', '.')]
 (N bubblegum/N water/N icey/N):
@@ -42835,12 +42856,13 @@ P ---> P
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: []
+eat --- has positive sentiment of 0.5
 (N anything/N (NP here/ADV except/P for/P ice/N cream/N)):
 	has positive sentiment of 0
 	has negative sentiment of 0
  	about: ['anything', 'ice', 'cream']
 	(A food concept!)
-U
+P
 +++++++++
 [('super', 'N'), ('melt', 'VD'), ('was', 'VD'), ('absolutely', 'ADV'), ('disgusting', 'VG'), ('.', '.')]
 (N super/N):
@@ -42853,12 +42875,12 @@ N
 +++++++++
 [('couldnt', 'N'), ('even', 'ADV'), ('eat', 'V'), ('it', 'PRO'), ('.', '.')]
 (N couldnt/N (NP even/ADV eat/V it/PRO)):
-	has positive sentiment of 0
+	has positive sentiment of 0.5
 	has negative sentiment of 0.75
  	about: []
-N
+U
 +++++++++
-N ---> N
+N ---> U
 ~~~~~~~~~~~~
 [('no', 'DET'), ('more', 'ADJ'), ('chocolate', 'ADJ'), ('softserve', 'N'), ('ice', 'N'), ('cream', 'N'), ('crazy', 'N'), ('!', '.')]
 (N
